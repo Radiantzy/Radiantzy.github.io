@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Radiantzy.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-03-15T15:34:05.561Z</updated>
+    <title>Radiantz</title>
+    <updated>2020-03-15T16:01:56.222Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Radiantzy.github.io"/>
     <link rel="self" href="https://Radiantzy.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>帮助自己收获更多的地方！</subtitle>
     <logo>https://Radiantzy.github.io/images/avatar.png</logo>
     <icon>https://Radiantzy.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, Radiantz</rights>
     <entry>
-        <title type="html"><![CDATA[# 我的博客]]></title>
+        <title type="html"><![CDATA[我的博客]]></title>
         <id>https://Radiantzy.github.io/post/wo-de-bo-ke/</id>
         <link href="https://Radiantzy.github.io/post/wo-de-bo-ke/">
         </link>
         <updated>2020-03-15T15:33:42.000Z</updated>
         <content type="html"><![CDATA[<p><strong>这是第一次写博客，不知道要说些什么，就是一个分享琐事的小平台，希望自己以后会学的越来越多吧！</strong></p>
-<p><strong>加一张图片表示鼓励</strong></p>
 <p><strong>PicGo踩坑记（上传失败，服务端出错，请重试T_T）</strong></p>
-<p>我遇到了有图床设置问题。我用的2.2.2版本搭配github做图床                                                                                    <img src="C:%5CUsers%5CAdministrator%5CDesktop%5C060eeb8557871b3e4c41e2f83574f3f.png" alt="060eeb8557871b3e4c41e2f83574f3f" loading="lazy"><strong>仓库名不能出现空格！！（如果一定要有空格就用“-”代替，github中空格默认换成“ - ”</strong></p>
+<p>我遇到的问题是关于图床设置的。我用的2.2.2版本搭配github做图床。                               <strong>仓库名不能出现空格！！（如果一定要有空格就用“-”代替，github中空格默认换成“ - ”（就发现目前踩了一个坑，明天看一看继续踩）</strong></p>
 ]]></content>
     </entry>
     <entry>
