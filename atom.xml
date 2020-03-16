@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://Radiantzy.github.io</id>
+    <id>https://Radiant.com</id>
     <title>Radiantz</title>
-    <updated>2020-03-15T16:01:56.222Z</updated>
+    <updated>2020-03-16T15:30:47.332Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://Radiantzy.github.io"/>
-    <link rel="self" href="https://Radiantzy.github.io/atom.xml"/>
+    <link rel="alternate" href="https://Radiant.com"/>
+    <link rel="self" href="https://Radiant.com/atom.xml"/>
     <subtitle>帮助自己收获更多的地方！</subtitle>
-    <logo>https://Radiantzy.github.io/images/avatar.png</logo>
-    <icon>https://Radiantzy.github.io/favicon.ico</icon>
+    <logo>https://Radiant.com/images/avatar.png</logo>
+    <icon>https://Radiant.com/favicon.ico</icon>
     <rights>All rights reserved 2020, Radiantz</rights>
     <entry>
+        <title type="html"><![CDATA[墨落成白   词曲：Radiant,瓒瓒]]></title>
+        <id>https://Radiant.com/post/mo-luo-cheng-bai-ci-qu-radiantzan-zan/</id>
+        <link href="https://Radiant.com/post/mo-luo-cheng-bai-ci-qu-radiantzan-zan/">
+        </link>
+        <updated>2020-03-16T14:34:28.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>十里长亭未烟火</strong><br>
+<strong>千里阑珊终素裹</strong><br>
+<strong>无边飞沙寒温哞</strong><br>
+<strong>碧纱凉初透</strong><br>
+<strong>柔荑似转慢梳回廊下</strong><br>
+<strong>赤衣长情待到花开时</strong><br>
+<strong>你曾低眉絮语，眼中藏蜜意</strong><br>
+<strong>我今红妆华衣，与君生别离</strong><br>
+<strong>枯藤老树，坐看繁华落尽一时</strong><br>
+<strong>余自独赏  良人已迟</strong><br>
+<strong>想当年，金戈铁马，一人之下，留一缕牵挂</strong><br>
+<strong>而如今，白头孤崖，飘散了，满地红花</strong><br>
+<strong>我承认，那时意念，从此远离，赌书泼茶</strong><br>
+<strong>只剩下，万卷书简，丽人成双，突添悲话</strong><br>
+<strong>若有来世，愿淡饭粗茶，求鸾曲答，度相安年华</strong><br>
+<strong>奈何尘世，命数无轮回</strong><br>
+<strong>何故不记，琴心未有涯</strong><br>
+<strong>终剩我一人  牵挂</strong></p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[我的博客]]></title>
-        <id>https://Radiantzy.github.io/post/wo-de-bo-ke/</id>
-        <link href="https://Radiantzy.github.io/post/wo-de-bo-ke/">
+        <id>https://Radiant.com/post/wo-de-bo-ke/</id>
+        <link href="https://Radiant.com/post/wo-de-bo-ke/">
         </link>
         <updated>2020-03-15T15:33:42.000Z</updated>
         <content type="html"><![CDATA[<p><strong>这是第一次写博客，不知道要说些什么，就是一个分享琐事的小平台，希望自己以后会学的越来越多吧！</strong></p>
@@ -23,8 +49,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://Radiantzy.github.io/post/hello-gridea/</id>
-        <link href="https://Radiantzy.github.io/post/hello-gridea/">
+        <id>https://Radiant.com/post/hello-gridea/</id>
+        <link href="https://Radiant.com/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
@@ -37,20 +63,16 @@
 <a href="https://gridea.dev/">Gridea 主页</a><br>
 <a href="http://fehey.com/">示例网站</a></p>
 <h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<p>📝  使用 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  给文章配上封面图和在文章任意位置插入图片</p>
+<p>🏷️  对文章进行标签分组</p>
+<p>📋  自定义菜单，可以创建外部链接菜单</p>
+<p>💻  可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
 ]]></content>
     </entry>
 </feed>
