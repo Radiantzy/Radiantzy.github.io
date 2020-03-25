@@ -1,209 +1,694 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Radiantz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-    <link rel="stylesheet" href="/media/css/post.css">
-    <link rel="stylesheet" href="/media/live2d/css/live2d.css" />
-    
-</head>
-<body class=" mdui-appbar-with-toolbar  mdui-theme-primary-pink mdui-theme-accent-pink">
-<header class="mdui-toolbar mdui-color-pink mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide" style="z-index: 1000">
-    <a href="javascript:;" mdui-drawer="{target: '#left-drawer',overlay:true}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
-    <span class="mdui-typo-title">Radiantz</span>
-    <div class="mdui-toolbar-spacer"></div>
-<!--    <a href="javascript:history.go(0);" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
-</header>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
 
-<div class="mdui-drawer mdui-color-white mdui-drawer-full-height mdui-drawer-close" id="left-drawer">
-    <ul class="mdui-list">
-        <li class="mdui-subheader">菜单</li>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="帮助自己收获更多的地方！">
+<meta name="theme-color" content="#495057">
+<title>记录github的一些认知加简单操作（大纲） | Radiantz</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1585151779241">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css" rel="stylesheet">  
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+    <meta name="description" content="记录github的一些认知加简单操作（大纲）" />
+    <meta name="keywords" content="github" />
+  </head>
+  <body>
+    <div class="head-top-line"></div>
+    <div class="header-box">
+      
+<div class=" gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>Radiantz</span>
+            </a>  
+          
+        </div>
         
-        <li class="mdui-list-item mdui-ripple">
-            <a href="/" class="mdui-list-item-content">首页</a>
-        </li>
+          <p class="subtitle">提升自己，倾心于学</p>
         
-        <li class="mdui-list-item mdui-ripple">
-            <a href="/archives" class="mdui-list-item-content">归档</a>
-        </li>
-        
-        <li class="mdui-list-item mdui-ripple">
-            <a href="/tags" class="mdui-list-item-content">标签</a>
-        </li>
-        
-        <li class="mdui-list-item mdui-ripple">
-            <a href="/post/about" class="mdui-list-item-content">关于</a>
-        </li>
-        
-    </ul>
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends" target="_self">
+                  
+                    友链友情链接
+                  
+                </a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
 </div>
 
-<div id="content" class="site-content">
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-            <article id="post-1270" class="post-1270 post type-post status-publish format-standard hentry category-90 category-129 tag-149">
-                <header class="entry-header">
-                    <h1 class="entry-title">记录github的一些认知加简单操作（大纲）</h1>
-                    <p class="entry-census">发布于 2020-03-17</p>
-                    <hr>
-                </header>
-                <div class="neko">
-                    <!-- more -->
-<p><strong>1.首先得知道github是什么</strong></p>
-<p><strong>2.git又是什么</strong></p>
-<p><strong>3.使用github要怎么准备</strong></p>
-<p><strong>4.另外大致的说一下用Gridea简单快速创造博客，前提要有github</strong></p>
-<p><strong>因为自己之前也蛮吃亏的，面对全英界面也不知道怎么操作，这是爬过来的一点小理解吧，参考了一些大佬的阐述，搞得一点东西，以后遇到了更多，会把更多操作都写上来</strong></p>
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+    </div>
+    <div class="main-continer">
+      
+      <div class="section-layout gemini ">
+        <div class="section-layout-wrapper">
+          
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">Radiantz</p>
+    <p class="site-description right-motion">帮助自己收获更多的地方！</p>
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
+      </div>
+    
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="https://github.com/Radiantzy">
+              <i class="fa fa-globe" title="Radiant"></i>
+            </a>
+          
+        
+        
+      </div>
+    </div>
+  
+
+
+</div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+          <div class="section-box box-shadow-wrapper">
+            <div class="section bg-color post post-page">
+              <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://Radiantzy.github.io/post/ji-lu-github-de-yi-xie-ren-zhi-jia-jian-dan-cao-zuo/">
+      记录github的一些认知加简单操作（大纲）
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+      <span class="meta-item">
+        <i class="fa fa-thumb-tack"></i>
+        <span>置顶</span>
+        <span class="post-meta-divider">|</span>
+      </span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-03-17</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+      <span class="meta-item">
+        <i class="fa fa-folder-o"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="https://Radiantzy.github.io/tag/5GgGsDX2Z/">
+              <span>github</span>
+            </a>
+          
+        
+      </span>
+      <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>6分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>1624<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+              <div class="post-body next-md-body" id="post_body">
+                <!-- more -->
+<p><strong><strong>1.首先得知道github是什么</strong></strong></p>
+<p><strong><strong>2.git又是什么</strong></strong></p>
+<p><strong><strong>3.使用github要怎么准备</strong></strong></p>
+<p><strong><strong>4.另外大致的说一下用Gridea简单快速创造博客，前提要有github</strong></strong></p>
+<p><strong><strong>因为自己之前也蛮吃亏的，面对全英界面也不知道怎么操作，这是爬过来的一点小理解吧，参考了一些大佬的阐述，搞得一点东西，以后遇到了更多，会把更多操作都写上来</strong></strong></p>
 <p>--------手动分界线QAQ</p>
 <p><em><strong>一.github</strong></em></p>
-<p>A：官网意思就是为开发者提供git仓库的托管服务，让自己和他人<strong>共享代码</strong>，即远隔半个地球也可以可以共同开发软件。</p>
-<p>图标是octocat（章鱼猫）如图<br>
-这里还有   一些网友自己制造的章鱼猫的形象   的链接（QAQ只是想粘来玩玩嘻嘻嘻<a href="https://octodex.github.com/">https://octodex.github.com/%EF%BC%8C</a></p>
+<p>A：官网意思就是为开发者提供git仓库的托管服务，让自己和他人<strong><strong>共享代码</strong></strong>，即远隔半个地球也可以可以共同开发软件。</p>
+<p>图标是octocat（章鱼猫）如图</p>
+<p>这里还有   一些网友自己制造的章鱼猫的形象   的链接（QAQ只是想粘来玩玩嘻嘻嘻<a href="https://octodex.github.com/">章鱼猫</a></p>
 <p>B：正题：区分好github和git，两个绝对不是一个东西！不是缩写啥子的，git可以说是一个仓库，就存放那些开发者的代码，而github就相当于取用仓库内东西的地方，那也就是说，github上取用东西的所有的源代码都是git管理的.</p>
-<p><em><strong>二.github的创建和准备</strong></em><br>
-A.先打开github的创建页面（要加链接，我是刚开始一直打不开（外国网站），然后就用手机去注册了，苹果端直接在sari上搜就好，安卓的下载火狐浏览器，（其他浏览器没试，不过安卓系统自带的浏览器也不行。）在上面可以登进github完成注册（亲测有效），注册的流程巴拉巴拉，可能明天更吧..</p>
+<p><em><strong>二.github的创建与准备</strong></em></p>
+<p>A.先打开github的创建页面（要加链接，我是刚开始一直打不开，然后就用手机去注册了，苹果端直接在sari上搜就好，安卓的下载火狐浏览器，（其他浏览器没试，不过安卓系统自带的浏览器也不行。）在上面可以登进github完成注册（亲测有效）</p>
+<p><a href="https://Radiantzy.github.io/post-images/1585145098092.png">github官方网站</a></p>
+<p>点开之后这样，就根据他的提示来，依次是确定一个用户名，邮箱，密码。<img src="https://Radiantzy.github.io/post-images/1585145225167.png" alt="" loading="lazy"></p>
+<p>都完成了之后下面有一个***select a plan***</p>
+<figure data-type="image" tabindex="1"><img src="https://Radiantzy.github.io/post-images/1585145383540.png" alt="" loading="lazy"></figure>
+<hr>
+<p>紧接着进入第二个页面，可以选择免费或者付费，看个人吧，（我选的免费hhh<img src="https://Radiantzy.github.io/post-images/1585145529178.png" alt="" loading="lazy"></p>
+<p>接着会有一个邮件提醒，验证一下，这个账户就创建啦！</p>
 <p><em><strong>三.Git</strong></em></p>
+<p>要再介绍一下git，因为github的一些操作跟git分不开</p>
 <p>A：官网意思就是：分散型版本管理系统，，简单的说就是跟日记一样，记录每次更新的记录，就让自己方便看到自己添加或者删改代码的过程，假若删错了也可以找回被删除的文件。</p>
-<p>B：记录一下git的安装吧 https://git-scm.com/download/win 这里有安装地址，复制粘贴到网页上选择自己的机型就可以下载啦，下载好了之后会出现类似于命令行的框框，能输入的地方引入$<br>
-1.先在上面输入 $ git config --global user.name(左边一堆都是固定格式)，&quot;Radiantzy&quot;<br>
-即  $ git config --global user.name &quot;Radiantzy&quot;<br>
-2.再在上面输入 $ git config --global user.email &quot;1660098139@qq.com&quot;</p>
-<p><em><strong>四.github里面的一些指令</strong></em></p>
+<p>这里还要提一下本地仓库和远程仓库，本地仓库=工作区（你什么CDE盘的文件的总和+版本区（git文件）</p>
+<p>版本库=暂存区（stage）+分支（master）+指针（head）</p>
+<p>B：<a href="https://git-scm.com/download/win">git</a>的安装。选择自己的机型就可以下载啦。</p>
+<p>下载好了之后，随便一个地方右键能看到***git bash here和git GUI here***就算安装成功，点开会出现类似于命令行的框框，</p>
+<figure data-type="image" tabindex="2"><img src="https://Radiantzy.github.io/post-images/1585146113802.png" alt="" loading="lazy"></figure>
+<p>之后我们就输入用户名和邮箱（因为之后要传到github，我这里就是用的github的用户名和绑定的邮箱。输入以下两行</p>
+<p><strong><strong>$ git config --global user.name &quot;Radiantzy&quot;</strong></strong></p>
+<p><strong><strong>$ git config --global user.email &quot;1660098139@qq.com&quot;</strong></strong></p>
+<figure data-type="image" tabindex="3"><img src="https://Radiantzy.github.io/post-images/1585146359151.png" alt="" loading="lazy"></figure>
+<p>接着创建一个密钥，如果你要从本地上传文件去github的话，需要一个密钥（ssh key）。</p>
+<figure data-type="image" tabindex="4"><img src="https://Radiantzy.github.io/post-images/1585146656387.png" alt="" loading="lazy"></figure>
+<p>我的密钥已经创建过了，所以你看，直接是可以打开的。新手的话是没有密钥的，接下来就记录一下怎么创建的密钥。输入***$ ssh-keygen -t rsa***，就会自动弹出一串东西（其实就是问你要在哪里创建，如果不更改的话那就默认C盘，一个文本文件，放在C盘是可以的，我没有做更改。第二次问你密码，第三次确定密码，不设密码就回车默认为空。</p>
+<figure data-type="image" tabindex="5"><img src="https://Radiantzy.github.io/post-images/1585147730523.png" alt="" loading="lazy"></figure>
+<p>然后就会出现这个，这时会形成两个文本文件，去计算机里面搜索ssh找到</p>
+<figure data-type="image" tabindex="6"><img src="https://Radiantzy.github.io/post-images/1585148051895.png" alt="" loading="lazy"></figure>
+<p>打开之后是这样</p>
+<figure data-type="image" tabindex="7"><img src="https://Radiantzy.github.io/post-images/1585148222154.png" alt="" loading="lazy"></figure>
+<p>以记事本形式打开第一个文本文件，并且复制全部内容（就是很长而且杂乱无章的意思..哭</p>
+<figure data-type="image" tabindex="8"><img src="https://Radiantzy.github.io/post-images/1585149169962.png" alt="" loading="lazy"></figure>
+<p>这些都做完了之后！登陆github，进入自己的settings，上图介绍个人资料和库的那里可以找到这个，看左边那一栏发现。</p>
+<figure data-type="image" tabindex="9"><img src="https://Radiantzy.github.io/post-images/1585148549288.png" alt="" loading="lazy"></figure>
+<p>再创建了之后输入自己的刚刚复制的一大串信息，title可写可不写，为了方便自己到时候查看和查找</p>
+<figure data-type="image" tabindex="10"><img src="https://Radiantzy.github.io/post-images/1585148636717.png" alt="" loading="lazy"></figure>
+<p>点进去这样，之后点击add ssh key还会弹出窗口，要再输入自己的github密码，确认即可。</p>
+<figure data-type="image" tabindex="11"><img src="https://Radiantzy.github.io/post-images/1585148728018.png" alt="" loading="lazy"></figure>
+<p>然后我们就创建好密钥啦</p>
+<figure data-type="image" tabindex="12"><img src="https://Radiantzy.github.io/post-images/1585148824517.png" alt="" loading="lazy"></figure>
+<p>再进去git，输入***$ git ssh -T git@github.com,能看到success之类的就成功啦！***</p>
+<p><em><strong>四.git里面的一些指令</strong></em></p>
+<p><strong>1.怎么提交</strong>，把你看中的一个仓库克隆到本地，即点击clone，要用ssh下的，且格式不是http，点击右上角的use ssh转换格式。要是git@github.com加巴拉巴拉，点击复制，就是那串链接后面那个东西，然后打开我的电脑，输入你克隆的那个库的名字搜索，把要上传的项目复制到这个文件夹，在这个文件夹内启动gitbash（直接右键就好）。</p>
+<figure data-type="image" tabindex="13"><img src="https://Radiantzy.github.io/post-images/1585149306929.png" alt="" loading="lazy"></figure>
+<p>***git add -A（A就是all）***接着所有删改，新增，删除的文件都会被add</p>
+<p><em><strong>git commit -m&quot;巴拉巴拉（注释一下）&quot;或者直接git commit</strong></em>，表示提交</p>
+<p>***git push origin master（推送本地更新到远程的origin***然后返回github里面就会看到库内多出了上传的文件了</p>
+<p>*一定要在克隆的文件夹里面启动git bash，将要上传的文件都复制到这个文件夹里，然后提交！！！</p>
+<p><strong>2.git里面的基础操作（萌新求指教</strong></p>
+<p>A.<strong>git init</strong>，创建一个git文件，成立版本区</p>
+<p>B.<strong>git add</strong>，就是把工作区的文件都提交到版本区里面的暂存区（唔..先存起来</p>
+<p>好像还可以这样，通过**git add./xxx/**一条一条加到暂存区</p>
+<p>C.<strong>git commit -m</strong>，把暂存区所有文件都提交到仓库（然后暂存区就没东西啦</p>
+<p>D.<strong>git remote add origin</strong>，把本地仓库和远程库连接起来</p>
+<p>E.<strong>git push -u origin master</strong>，把仓库区的文件提交到远程仓库</p>
+<p>提交之后，如果也没有对工作区有任何修改，那么工作区就是干净的，会有“nothing to commit,working tree clean”</p>
+<p>如果有时间的话，我会再写一个实操的文章。（以身试毒...？ 躺</p>
 
-                </div>
-            </article>
-        </main>
-    </div>
-    <div class="doc-footer-nav mdui-color-theme">
-        <div class="mdui-container">
-            <div class="mdui-row">
-                
-                <a href="https://Radiantzy.github.io/post/myself/" class="mdui-ripple mdui-color-theme mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left">
-                    <div class="doc-footer-nav-text">
-                        <i class="mdui-icon material-icons">arrow_back</i>
-                        <span class="doc-footer-nav-direction mdui-hidden-xs-down">上一篇文章</span>
-                        <div class="doc-footer-nav-chapter mdui-hidden-xs-down">myself</div>
-                    </div>
-                </a>
-                
-                
-                <a href="https://Radiantzy.github.io/post/mo-luo-cheng-bai-ci-qu-radiantzan-zan/" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
-                    <div class="doc-footer-nav-text">
-                        <i class="mdui-icon material-icons">arrow_forward</i>
-                        <span class="doc-footer-nav-direction">下一篇文章</span>
-                        <div class="doc-footer-nav-chapter">墨落成白   词曲：Radiant,瓒瓒</div>
-                    </div>
-                </a>
-                
-            </div>
-        </div>
-    </div>
-    <br>
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Radiantz
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://Radiantzy.github.io/post/ji-lu-github-de-yi-xie-ren-zhi-jia-jian-dan-cao-zuo/" title="记录github的一些认知加简单操作（大纲）">记录github的一些认知加简单操作（大纲）</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
     
-        
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+      <a href="https://Radiantzy.github.io/tag/5GgGsDX2Z/"># github</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="墨落成白   词曲：Radiant,瓒瓒" href="https://Radiantzy.github.io/post/mo-luo-cheng-bai-ci-qu-radiantzan-zan/">墨落成白   词曲：Radiant,瓒瓒</a>
+        <a class="nav-mobile-next" title="墨落成白   词曲：Radiant,瓒瓒" href="https://Radiantzy.github.io/post/mo-luo-cheng-bai-ci-qu-radiantzan-zan/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+  
+    
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
 
 <script>
-
-    var gitalk = new Gitalk({
-        clientID: '04b6fa51857c263d2327',
-        clientSecret: 'b50b99c1f42f3b1fb4beaa75e78b948c4a2b2a63',
-        repo: 'https://github.com/Radiantzy/Echoz',
-        owner: 'Radiant',
-        admin: ['Radiant'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    })
-
-    gitalk.render('gitalk-container')
-
+  var gitalk = new Gitalk({
+    clientID: '04b6fa51857c263d2327',
+    clientSecret: 'b50b99c1f42f3b1fb4beaa75e78b948c4a2b2a63',
+    repo: 'https://github.com/Radiantzy/Echoz',
+    owner: 'Radiant',
+    admin: ['Radiant'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  gitalk.render('gitalk-container')
 </script>
-
-        
-
-        
     
-    <div class="comment"></div>
-</div>
-<footer class="mdui-container footer ">
-    <div class="head_card-offset"></div>
-    <div class="mdui-row mdui-row-gapless">
-        <div class="k-container">
-            <img width="100%" src="/media/img/skirt.png">
-        </div>
-    </div>
+    
+  
 
-    <div class="site-info">
-        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By HsxyHao
     </div>
-</footer>
-<div id="landlord" style="left:5px;bottom:0px;">
+    <div class="poweredby">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+    <div class="bg-img" style="background-image: url('\media\images\custom-bgImg.jpg');background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    </div>
+  
+  
+    
+
+<link rel="stylesheet" href="/media/live2d/histoire/css/live2d.css" />
+<div class="box-scale">
+  <div id="landlord" style="left: 5px;bottom: px;" data-key="92f720b8691f469aa6fe5c44897fa64a">
     <div class="message" style="opacity:0"></div>
     <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
     <div class="live_talk_input_body">
-        <div class="live_talk_input_name_body">
-            <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off" placeholder="你的名字" />
-        </div>
-        <div class="live_talk_input_text_body">
-            <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
-            <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
-        </div>
+      <div class="live_talk_input_name_body">
+        <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off" placeholder="你的名字" />
+      </div>
+      <div class="live_talk_input_text_body">
+        <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
+        <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+      </div>
     </div>
     <input name="live_talk" id="live_talk" value="1" type="hidden" />
     <div class="live_ico_box">
-        <div class="live_ico_item type_info" id="showInfoBtn"></div>
-        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
-        <div class="live_ico_item type_music" id="musicButton"></div>
-        <div class="live_ico_item type_youdu" id="youduButton"></div>
-        <div class="live_ico_item type_quit" id="hideButton"></div>
-        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
-        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
-        <input name="live2dBGM" value="https://img.apa70.com/123.mp3" type="hidden">
-        <input name="live2dBGM" value="https://img.apa70.com/123.mp3" type="hidden">
-        <input id="duType" value="douqilai,l2d_caihong" type="hidden">
+      <div class="live_ico_item type_info" id="showInfoBtn"></div>
+      <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+      
+      <div class="live_ico_item type_music" id="musicButton"></div>
+      
+      <div class="live_ico_item type_youdu" id="youduButton"></div>
+      <div class="live_ico_item type_quit" id="hideButton"></div>
+      <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+      <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+      <input id="duType" value="douqilai" type="hidden">
+      
+        <input name="live2dBGM" value="https://music.163.com/#/playlist?id=3232491318" type="hidden">
+      
     </div>
+  </div>
 </div>
 <div id="open_live2d">召唤伊斯特瓦尔</div>
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script>
-    var message_Path = '/media/live2d/';//资源目录，如果目录不对请更改
-    var talkAPI = "";//如果有类似图灵机器人的聊天接口请填写接口路径
+var message_Path = '/media/live2d/histoire/';
+let landlord = document.querySelector('#landlord');
+var apiKey = landlord.dataset.key;
 </script>
-<!--<script src="/media/js/jquery-3.3.1.min.js"></script>-->
-<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
-<script type="text/javascript" src="/media/live2d/js/message.js"></script>
-
-</body>
-<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script type="text/javascript" src="/media/live2d/histoire/js/live2d.js"></script>
+<script type="text/javascript" src="/media/live2d/histoire/js/message.js"></script>
+  
+  
+</div>
 <script>
-    $('.comment').bind('DOMNodeInserted',()=>{
-        $('.comment').unbind()
 
-        $('.vbtn').addClass(' mdui-btn mdui-color-theme-accent mdui-ripple')
-    })
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
 
-    let valine = new Valine({
-        el: '.comment',
-        
-        
-        
-        placeholder: '欢迎评论啦',
-        
-        path: window.location.pathname,
-        pageSize: 30,
-        avatar:'mm',
-        notify:true
-    })
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
 </script>
+    </div>
+  </body>
+  <script src="/media/js/motion.js"></script>
 </html>

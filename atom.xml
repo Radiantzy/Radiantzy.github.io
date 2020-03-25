@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Radiantzy.github.io</id>
     <title>Radiantz</title>
-    <updated>2020-03-25T05:17:03.387Z</updated>
+    <updated>2020-03-25T15:57:08.195Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Radiantzy.github.io"/>
     <link rel="self" href="https://Radiantzy.github.io/atom.xml"/>
@@ -11,59 +11,79 @@
     <icon>https://Radiantzy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Radiantz</rights>
     <entry>
-        <title type="html"><![CDATA[myself]]></title>
-        <id>https://Radiantzy.github.io/post/myself/</id>
-        <link href="https://Radiantzy.github.io/post/myself/">
-        </link>
-        <updated>2020-03-19T00:37:39.000Z</updated>
-        <content type="html"><![CDATA[<p>(昨晚有点发烧，脑壳无敌难受，也可能是连着两天轮轴转转蒙了)<br>
-不想更别的了，就想更自己<br>
-<em><strong>这里是一个10月末的蝎女</strong></em></p>
-<pre><code>超喜欢史迪仔
-超喜欢邓伦
-不喜欢打标点，却喜欢只打半个括号
-</code></pre>
-<p>我是挺直率的一个女孩子吧，遇事不太愿意计较，然后很多人都说我蛮傻的hhhhh（除了笑的像二哈，我不承认！<br>
-我还很较真，某些事情自己认定了，就一定会做，就是那种不管别人怎么劝都不会回头的那种。不是不回头，等到自己吃亏受伤了就会回头了，这算更相信自己的感觉？？不了解<br>
-我很喜欢数学，很喜欢很喜欢，那种看见数字就会很兴奋的感觉，虽然数学不好，但是也确实不影响我一直奔着它去的feel，加上我对数字很敏感，我能更快的记住一些没有规律可言的数字，然后形成永久记忆的时间也更快，加上速算完全odkk（都是中学刷题刷多了刷出的速度hhhh....但是相比之下在现实生活中我并没有太好的记性，会记不住今天啥课，拿没有拿什么书，室友跟自己说了啥之类..就是忘得一！干！二！净！<br>
-喜欢弹吉他，喜欢弹钢琴，有一些些所谓的文学情怀和素养，喜欢自己写歌，写小诗，特别喜欢有情调的人或事，所以很喜欢很喜欢许嵩嘻嘻<br>
-我对待想交的人，就是无敌热情，无敌hmp，哈哈哈，恨不得什么东西都想分享给她，一句掰成两句说，一直巴拉巴拉能说好久，如果你能给我恰当的回应，换来的就是更加琐碎的巴拉巴拉...嘿嘿<br>
-我对待不太想交的人（也可能是不太熟或不了解，基本上就是“恩”“哦”“好”一个语气词就差不多了，然后就不用说了解我日常之类的话了，要是戳到了想聊的，那就是又开始巴拉巴拉..巴拉结束继续..冷漠QAQ<br>
-要是刚开始见面呀，我对外人展示的形象应该是比较高冷的吧，又高冷又话少，不太喜欢与人接近<br>
-缺乏安全感！及其缺！私下里小女生情结还是蛮严重的，生活上喜欢依赖别人，不过绝对不缺乏自我生存的能力，自己想做的事会自己从头拿起，基本不会转手他人突然放弃。<br>
-喜欢看别人甜甜的恋爱，越看越喜欢，嘴上说着，啊，超想谈恋爱，这也太甜了！！然后要是真的要我谈恋爱了又是不想，还是单着吧hhh，除非是自己遇到了很想争取的人，绝对义无反顾的很喜欢很喜欢，不然很难去喜欢上刚开始没有feel的人<br>
-我不太容易生气，不管怎么对我都不太容易生气，因为真的生气只会发在特别特别特别要好的人身上，（亲人，或者发小，或者男朋友<br>
-心思还是比较细腻的，这也可能是所谓心机？不知道，没概念<br>
-想得远，心理年龄大概80岁了吧，对一些未来的事情看得更透彻，想得更远一些。</p>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[记录github的一些认知加简单操作（大纲）]]></title>
         <id>https://Radiantzy.github.io/post/ji-lu-github-de-yi-xie-ren-zhi-jia-jian-dan-cao-zuo/</id>
         <link href="https://Radiantzy.github.io/post/ji-lu-github-de-yi-xie-ren-zhi-jia-jian-dan-cao-zuo/">
         </link>
         <updated>2020-03-17T15:13:52.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
-<p><strong>1.首先得知道github是什么</strong></p>
-<p><strong>2.git又是什么</strong></p>
-<p><strong>3.使用github要怎么准备</strong></p>
-<p><strong>4.另外大致的说一下用Gridea简单快速创造博客，前提要有github</strong></p>
-<p><strong>因为自己之前也蛮吃亏的，面对全英界面也不知道怎么操作，这是爬过来的一点小理解吧，参考了一些大佬的阐述，搞得一点东西，以后遇到了更多，会把更多操作都写上来</strong></p>
+<p><strong><strong>1.首先得知道github是什么</strong></strong></p>
+<p><strong><strong>2.git又是什么</strong></strong></p>
+<p><strong><strong>3.使用github要怎么准备</strong></strong></p>
+<p><strong><strong>4.另外大致的说一下用Gridea简单快速创造博客，前提要有github</strong></strong></p>
+<p><strong><strong>因为自己之前也蛮吃亏的，面对全英界面也不知道怎么操作，这是爬过来的一点小理解吧，参考了一些大佬的阐述，搞得一点东西，以后遇到了更多，会把更多操作都写上来</strong></strong></p>
 <p>--------手动分界线QAQ</p>
 <p><em><strong>一.github</strong></em></p>
-<p>A：官网意思就是为开发者提供git仓库的托管服务，让自己和他人<strong>共享代码</strong>，即远隔半个地球也可以可以共同开发软件。</p>
-<p>图标是octocat（章鱼猫）如图<br>
-这里还有   一些网友自己制造的章鱼猫的形象   的链接（QAQ只是想粘来玩玩嘻嘻嘻<a href="https://octodex.github.com/">https://octodex.github.com/%EF%BC%8C</a></p>
+<p>A：官网意思就是为开发者提供git仓库的托管服务，让自己和他人<strong><strong>共享代码</strong></strong>，即远隔半个地球也可以可以共同开发软件。</p>
+<p>图标是octocat（章鱼猫）如图</p>
+<p>这里还有   一些网友自己制造的章鱼猫的形象   的链接（QAQ只是想粘来玩玩嘻嘻嘻<a href="https://octodex.github.com/">章鱼猫</a></p>
 <p>B：正题：区分好github和git，两个绝对不是一个东西！不是缩写啥子的，git可以说是一个仓库，就存放那些开发者的代码，而github就相当于取用仓库内东西的地方，那也就是说，github上取用东西的所有的源代码都是git管理的.</p>
-<p><em><strong>二.github的创建和准备</strong></em><br>
-A.先打开github的创建页面（要加链接，我是刚开始一直打不开（外国网站），然后就用手机去注册了，苹果端直接在sari上搜就好，安卓的下载火狐浏览器，（其他浏览器没试，不过安卓系统自带的浏览器也不行。）在上面可以登进github完成注册（亲测有效），注册的流程巴拉巴拉，可能明天更吧..</p>
+<p><em><strong>二.github的创建与准备</strong></em></p>
+<p>A.先打开github的创建页面（要加链接，我是刚开始一直打不开，然后就用手机去注册了，苹果端直接在sari上搜就好，安卓的下载火狐浏览器，（其他浏览器没试，不过安卓系统自带的浏览器也不行。）在上面可以登进github完成注册（亲测有效）</p>
+<p><a href="https://Radiantzy.github.io/post-images/1585145098092.png">github官方网站</a></p>
+<p>点开之后这样，就根据他的提示来，依次是确定一个用户名，邮箱，密码。<img src="https://Radiantzy.github.io/post-images/1585145225167.png" alt="" loading="lazy"></p>
+<p>都完成了之后下面有一个***select a plan***</p>
+<figure data-type="image" tabindex="1"><img src="https://Radiantzy.github.io/post-images/1585145383540.png" alt="" loading="lazy"></figure>
+<hr>
+<p>紧接着进入第二个页面，可以选择免费或者付费，看个人吧，（我选的免费hhh<img src="https://Radiantzy.github.io/post-images/1585145529178.png" alt="" loading="lazy"></p>
+<p>接着会有一个邮件提醒，验证一下，这个账户就创建啦！</p>
 <p><em><strong>三.Git</strong></em></p>
+<p>要再介绍一下git，因为github的一些操作跟git分不开</p>
 <p>A：官网意思就是：分散型版本管理系统，，简单的说就是跟日记一样，记录每次更新的记录，就让自己方便看到自己添加或者删改代码的过程，假若删错了也可以找回被删除的文件。</p>
-<p>B：记录一下git的安装吧 https://git-scm.com/download/win 这里有安装地址，复制粘贴到网页上选择自己的机型就可以下载啦，下载好了之后会出现类似于命令行的框框，能输入的地方引入$<br>
-1.先在上面输入 $ git config --global user.name(左边一堆都是固定格式)，&quot;Radiantzy&quot;<br>
-即  $ git config --global user.name &quot;Radiantzy&quot;<br>
-2.再在上面输入 $ git config --global user.email &quot;1660098139@qq.com&quot;</p>
-<p><em><strong>四.github里面的一些指令</strong></em></p>
+<p>这里还要提一下本地仓库和远程仓库，本地仓库=工作区（你什么CDE盘的文件的总和+版本区（git文件）</p>
+<p>版本库=暂存区（stage）+分支（master）+指针（head）</p>
+<p>B：<a href="https://git-scm.com/download/win">git</a>的安装。选择自己的机型就可以下载啦。</p>
+<p>下载好了之后，随便一个地方右键能看到***git bash here和git GUI here***就算安装成功，点开会出现类似于命令行的框框，</p>
+<figure data-type="image" tabindex="2"><img src="https://Radiantzy.github.io/post-images/1585146113802.png" alt="" loading="lazy"></figure>
+<p>之后我们就输入用户名和邮箱（因为之后要传到github，我这里就是用的github的用户名和绑定的邮箱。输入以下两行</p>
+<p><strong><strong>$ git config --global user.name &quot;Radiantzy&quot;</strong></strong></p>
+<p><strong><strong>$ git config --global user.email &quot;1660098139@qq.com&quot;</strong></strong></p>
+<figure data-type="image" tabindex="3"><img src="https://Radiantzy.github.io/post-images/1585146359151.png" alt="" loading="lazy"></figure>
+<p>接着创建一个密钥，如果你要从本地上传文件去github的话，需要一个密钥（ssh key）。</p>
+<figure data-type="image" tabindex="4"><img src="https://Radiantzy.github.io/post-images/1585146656387.png" alt="" loading="lazy"></figure>
+<p>我的密钥已经创建过了，所以你看，直接是可以打开的。新手的话是没有密钥的，接下来就记录一下怎么创建的密钥。输入***$ ssh-keygen -t rsa***，就会自动弹出一串东西（其实就是问你要在哪里创建，如果不更改的话那就默认C盘，一个文本文件，放在C盘是可以的，我没有做更改。第二次问你密码，第三次确定密码，不设密码就回车默认为空。</p>
+<figure data-type="image" tabindex="5"><img src="https://Radiantzy.github.io/post-images/1585147730523.png" alt="" loading="lazy"></figure>
+<p>然后就会出现这个，这时会形成两个文本文件，去计算机里面搜索ssh找到</p>
+<figure data-type="image" tabindex="6"><img src="https://Radiantzy.github.io/post-images/1585148051895.png" alt="" loading="lazy"></figure>
+<p>打开之后是这样</p>
+<figure data-type="image" tabindex="7"><img src="https://Radiantzy.github.io/post-images/1585148222154.png" alt="" loading="lazy"></figure>
+<p>以记事本形式打开第一个文本文件，并且复制全部内容（就是很长而且杂乱无章的意思..哭</p>
+<figure data-type="image" tabindex="8"><img src="https://Radiantzy.github.io/post-images/1585149169962.png" alt="" loading="lazy"></figure>
+<p>这些都做完了之后！登陆github，进入自己的settings，上图介绍个人资料和库的那里可以找到这个，看左边那一栏发现。</p>
+<figure data-type="image" tabindex="9"><img src="https://Radiantzy.github.io/post-images/1585148549288.png" alt="" loading="lazy"></figure>
+<p>再创建了之后输入自己的刚刚复制的一大串信息，title可写可不写，为了方便自己到时候查看和查找</p>
+<figure data-type="image" tabindex="10"><img src="https://Radiantzy.github.io/post-images/1585148636717.png" alt="" loading="lazy"></figure>
+<p>点进去这样，之后点击add ssh key还会弹出窗口，要再输入自己的github密码，确认即可。</p>
+<figure data-type="image" tabindex="11"><img src="https://Radiantzy.github.io/post-images/1585148728018.png" alt="" loading="lazy"></figure>
+<p>然后我们就创建好密钥啦</p>
+<figure data-type="image" tabindex="12"><img src="https://Radiantzy.github.io/post-images/1585148824517.png" alt="" loading="lazy"></figure>
+<p>再进去git，输入***$ git ssh -T git@github.com,能看到success之类的就成功啦！***</p>
+<p><em><strong>四.git里面的一些指令</strong></em></p>
+<p><strong>1.怎么提交</strong>，把你看中的一个仓库克隆到本地，即点击clone，要用ssh下的，且格式不是http，点击右上角的use ssh转换格式。要是git@github.com加巴拉巴拉，点击复制，就是那串链接后面那个东西，然后打开我的电脑，输入你克隆的那个库的名字搜索，把要上传的项目复制到这个文件夹，在这个文件夹内启动gitbash（直接右键就好）。</p>
+<figure data-type="image" tabindex="13"><img src="https://Radiantzy.github.io/post-images/1585149306929.png" alt="" loading="lazy"></figure>
+<p>***git add -A（A就是all）***接着所有删改，新增，删除的文件都会被add</p>
+<p><em><strong>git commit -m&quot;巴拉巴拉（注释一下）&quot;或者直接git commit</strong></em>，表示提交</p>
+<p>***git push origin master（推送本地更新到远程的origin***然后返回github里面就会看到库内多出了上传的文件了</p>
+<p>*一定要在克隆的文件夹里面启动git bash，将要上传的文件都复制到这个文件夹里，然后提交！！！</p>
+<p><strong>2.git里面的基础操作（萌新求指教</strong></p>
+<p>A.<strong>git init</strong>，创建一个git文件，成立版本区</p>
+<p>B.<strong>git add</strong>，就是把工作区的文件都提交到版本区里面的暂存区（唔..先存起来</p>
+<p>好像还可以这样，通过**git add./xxx/**一条一条加到暂存区</p>
+<p>C.<strong>git commit -m</strong>，把暂存区所有文件都提交到仓库（然后暂存区就没东西啦</p>
+<p>D.<strong>git remote add origin</strong>，把本地仓库和远程库连接起来</p>
+<p>E.<strong>git push -u origin master</strong>，把仓库区的文件提交到远程仓库</p>
+<p>提交之后，如果也没有对工作区有任何修改，那么工作区就是干净的，会有“nothing to commit,working tree clean”</p>
+<p>如果有时间的话，我会再写一个实操的文章。（以身试毒...？ 躺</p>
 ]]></content>
     </entry>
     <entry>
@@ -100,36 +120,8 @@ A.先打开github的创建页面（要加链接，我是刚开始一直打不开
         </link>
         <updated>2020-03-15T15:33:42.000Z</updated>
         <content type="html"><![CDATA[<p><strong>这是第一次写博客，不知道要说些什么，就是一个分享琐事的小平台，希望自己以后会学的越来越多吧！</strong></p>
-<p><strong>PicGo踩坑记（上传失败，服务端出错，请重试T_T）</strong></p>
-<p>我遇到的问题是关于图床设置的。我用的2.2.2版本搭配github做图床。                               <strong>仓库名不能出现空格！！（如果一定要有空格就用“-”代替，github中空格默认换成“ - ”（就发现目前踩了一个坑，明天看一看继续踩）</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://Radiantzy.github.io/post/hello-gridea/</id>
-        <link href="https://Radiantzy.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  使用 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  给文章配上封面图和在文章任意位置插入图片</p>
-<p>🏷️  对文章进行标签分组</p>
-<p>📋  自定义菜单，可以创建外部链接菜单</p>
-<p>💻  可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>**PicGo踩坑记（上传失败，服务端出错，请重试T_T）<br>
+我遇到的问题是关于图床设置的。我用的2.2.2版本搭配github做图床。                               <strong>仓库名不能出现空格！！（如果一定要有空格就用“-”代替，github中空格默认换成“ - ”（就发现目前踩了一个坑，明天看一看继续踩）</strong></p>
 ]]></content>
     </entry>
 </feed>
