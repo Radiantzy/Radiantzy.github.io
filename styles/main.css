@@ -1962,11 +1962,13 @@ blockquote:before {
 .hljs-strong {
   font-weight: bold;
 }
-body {
-      background-color: #eee;
+.bg-color .bg-color {
+      background: transparent !important;
+    }body {
+      background-color: #d3f9d8;
     }
     .nav-toggle .line {
-      background-color: #eee !important;
+      background-color: #d3f9d8 !important;
     }.header {
         width: 960px;
         margin: 0 auto;
@@ -1977,37 +1979,37 @@ body {
         margin: 0 auto;
       }
     body {
-      color: #0b7285;
+      color: #212529;
     }
     .next-md-body {
-      color: #0b7285;
+      color: #212529;
     }
     .next-md-body h1, .next-md-body h2 {
-      border-bottom-color: #0b7285;
+      border-bottom-color: #212529;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: ##ffe066fe;
+      background: ##f783acd8;
     }h1, h2, h3, h4, h5, h6 {
-      color: #495057;
+      color: #212529;
     }
     
     .archive-timeline-title::before {
-      background-color: #495057;
+      background-color: #212529;
     }
     
     .post-title-link::before {
-      background-color: #495057;
+      background-color: #212529;
     }
     
     .node-title::before {
-      background-color: #495057;
+      background-color: #212529;
     }a {
-      color: #212529;
+      color: #343a40;
     }
     
     .next-md-body a, .friends-box a  {
-      color: #212529;
-      border-bottom: 1px solid #212529;
+      color: #343a40;
+      border-bottom: 1px solid #343a40;
     }a:hover {
       color: #212529;
     }
@@ -2026,15 +2028,15 @@ body {
       border-bottom-color: #212529;
     }
       .nav-item a {
-        color:  #343a40;
+        color:  #212529;
       }.nav-item a:hover {
-        color: #4263eb;
+        color: #0b7285;
       }.nav-item-active {
-      background: ##ff6b6bfe;
+      background: ##3bc9dbd8;
     }
 
     .nav-item:hover {
-      background: ##ff6b6bfe;
+      background: ##3bc9dbd8;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2046,67 +2048,46 @@ body {
       transition-duration: 59s;
       transition-timing-function: cubic-bezier(.34,0,.84,1);
     }.markdownIt-TOC a {
-      color: #212529;
-      border-bottom-color: #212529;
+      color: #e03131;
+      border-bottom-color: #e03131;
     }.markdownIt-TOC a:hover {
-      color: #212529;
-      border-bottom-color: #212529;
+      color: #e03131;
+      border-bottom-color: #e03131;
     }.active-current > a {
-      color: #212529 !important;
-      border-bottom-color: #212529 !important;
+      color: #15aabf !important;
+      border-bottom-color: #15aabf !important;
     }
     .sidebar-title-active {
-      color: #212529;
-      border-bottom-color: #212529;
+      color: #15aabf;
+      border-bottom-color: #15aabf;
     }
     .sidebar-title-item:hover {
-      color: #212529 !important;
+      color: #15aabf !important;
     }
     .active-show > a {
-      color: #212529;
-      border-bottom-color: #212529;
+      color: #15aabf;
+      border-bottom-color: #15aabf;
     }
     .active-hidden > a {
-      color: #212529;
-      border-bottom-color: #212529;
+      color: #15aabf;
+      border-bottom-color: #15aabf;
     }.bg-color {
-      background-color: ##212529fe;
+      background-color: #ffffffd8;
     }
       .site-meta {
-        background: #495057 !important;
+        background: #0c8599 !important;
       }
       .head-top-line {
-        background: #495057 !important;
-      }.sidebar {
-      background-image: url(\media\images\custom-siteMetaImg.jpg) !important;
-    }
-    .sidebar-item-box a {
-      color: #eee;
-    }
-    .friends-title {
-      color: #eee;
-      border-top: 1px dotted #fff;
-    }
-    .friends-box a {
-      color: #eee;
-      border-bottom: 1px solid #eee;
-    }
-    .toc-wrapper a {
-      color: #eee;
-      border-bottom: 1px solid #eee;
-    }
-    .sidebar-title-item {
-      color: #eee;
-    }
-    
+        background: #0c8599 !important;
+      }
     .brand {
-      background: ##f59f00fe;
+      background: ##e03131d8;
     }
     .main-title {
-      color: #3bc9db;
+      color: #212529;
     }
     .mist .site-title i {
-      background: ##3bc9dbfe;
+      background: ##212529d8;
     }.box-shadow-wrapper {
       padding: 10px;
     }.box-shadow-wrapper {

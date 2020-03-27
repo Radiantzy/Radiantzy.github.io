@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Radiantzy.github.io</id>
     <title>Radiantz</title>
-    <updated>2020-03-27T15:59:01.294Z</updated>
+    <updated>2020-03-27T17:14:06.584Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Radiantzy.github.io"/>
     <link rel="self" href="https://Radiantzy.github.io/atom.xml"/>
@@ -88,7 +88,7 @@
 </li>
 </ul>
 <h3 id="github的创建与准备">github的创建与准备</h3>
-<h6 id="返回目录"><a href="#%E7%9B%AE%E5%BD%95">返回目录</a></h6>
+<h4 id="返回目录"><a href="#%E7%9B%AE%E5%BD%95">返回目录</a></h4>
 <ul>
 <li>
 <p><a href="https://github.com/">github官方网站</a>，我是刚开始一直打不开，然后就用手机去注册了，iOS端直接在sari上搜就好，Android系统的下载火狐浏览器，（其他浏览器没试，不过Android系统自带的浏览器也不行。）在上面可以登进github完成注册（亲测有效）</p>
@@ -104,7 +104,7 @@
 <p>接着会有一个邮件提醒，验证一下，这个账户就创建啦！</p>
 <p><a href="#%E7%9B%AE%E5%BD%95">返回目录</a></p>
 <h3 id="git">Git</h3>
-<h6 id="返回目录-2"><a href="#%E7%9B%AE%E5%BD%95">返回目录</a></h6>
+<h4 id="返回目录-2"><a href="#%E7%9B%AE%E5%BD%95">返回目录</a></h4>
 <ul>
 <li>
 <p>定义：分散型版本管理系统，简单的说就是跟日记一样，记录每次更新的记录，就让自己方便看到自己添加或者删改代码的过程，假若删错了也可以找回被删除的文件。</p>
@@ -146,7 +146,7 @@ $ git config --global user.email &quot;1660098139@qq.com&quot;
 <p>再进去git，输入<code>$ git ssh -T git@github.com</code>,能看到success之类的就成功啦！<br>
 <a href="#%E7%9B%AE%E5%BD%95">返回目录</a></p>
 <h3 id="git里面的一些指令">git里面的一些指令</h3>
-<h6 id="返回目录-3"><a href="#%E7%9B%AE%E5%BD%95">返回目录</a></h6>
+<h4 id="返回目录-3"><a href="#%E7%9B%AE%E5%BD%95">返回目录</a></h4>
 <ol>
 <li><strong>提交</strong>：把你看中的一个仓库克隆到本地，即点击clone，要用ssh下的，且格式不是http，点击右上角的use ssh转换 格式。要是git@github.com加巴拉巴拉，点击复制，就是那串链接后面那个东西，然后打开我的电脑，输入你克隆的那个库的名字搜索，把要上传的项目复制到这个文件夹，在这个文件夹内启动gitbash（直接右键就好）。</li>
 </ol>
