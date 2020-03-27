@@ -2002,12 +2002,12 @@ body {
     .node-title::before {
       background-color: #495057;
     }a {
-      color: #868e96;
+      color: #212529;
     }
     
     .next-md-body a, .friends-box a  {
-      color: #868e96;
-      border-bottom: 1px solid #868e96;
+      color: #212529;
+      border-bottom: 1px solid #212529;
     }a:hover {
       color: #212529;
     }
@@ -2046,29 +2046,29 @@ body {
       transition-duration: 59s;
       transition-timing-function: cubic-bezier(.34,0,.84,1);
     }.markdownIt-TOC a {
-      color: #ff6b6b;
-      border-bottom-color: #ff6b6b;
+      color: #212529;
+      border-bottom-color: #212529;
     }.markdownIt-TOC a:hover {
-      color: #ffa8a8;
-      border-bottom-color: #ffa8a8;
+      color: #212529;
+      border-bottom-color: #212529;
     }.active-current > a {
-      color: #748ffc !important;
-      border-bottom-color: #748ffc !important;
+      color: #212529 !important;
+      border-bottom-color: #212529 !important;
     }
     .sidebar-title-active {
-      color: #748ffc;
-      border-bottom-color: #748ffc;
+      color: #212529;
+      border-bottom-color: #212529;
     }
     .sidebar-title-item:hover {
-      color: #748ffc !important;
+      color: #212529 !important;
     }
     .active-show > a {
-      color: #748ffc;
-      border-bottom-color: #748ffc;
+      color: #212529;
+      border-bottom-color: #212529;
     }
     .active-hidden > a {
-      color: #748ffc;
-      border-bottom-color: #748ffc;
+      color: #212529;
+      border-bottom-color: #212529;
     }.bg-color {
       background-color: ##212529fe;
     }
@@ -2077,7 +2077,28 @@ body {
       }
       .head-top-line {
         background: #495057 !important;
-      }
+      }.sidebar {
+      background-image: url(\media\images\custom-siteMetaImg.jpg) !important;
+    }
+    .sidebar-item-box a {
+      color: #eee;
+    }
+    .friends-title {
+      color: #eee;
+      border-top: 1px dotted #fff;
+    }
+    .friends-box a {
+      color: #eee;
+      border-bottom: 1px solid #eee;
+    }
+    .toc-wrapper a {
+      color: #eee;
+      border-bottom: 1px solid #eee;
+    }
+    .sidebar-title-item {
+      color: #eee;
+    }
+    
     .brand {
       background: ##f59f00fe;
     }
