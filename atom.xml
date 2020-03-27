@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Radiantzy.github.io</id>
     <title>Radiantz</title>
-    <updated>2020-03-27T17:30:33.907Z</updated>
+    <updated>2020-03-27T18:25:13.023Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Radiantzy.github.io"/>
     <link rel="self" href="https://Radiantzy.github.io/atom.xml"/>
@@ -10,6 +10,63 @@
     <logo>https://Radiantzy.github.io/images/avatar.png</logo>
     <icon>https://Radiantzy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Radiantz</rights>
+    <entry>
+        <title type="html"><![CDATA[ 记录Gridea的下载介绍和简单配置]]></title>
+        <id>https://Radiantzy.github.io/post/ji-lu-gridea-de-xia-zai-jie-shao-he-jian-dan-pei-zhi/</id>
+        <link href="https://Radiantzy.github.io/post/ji-lu-gridea-de-xia-zai-jie-shao-he-jian-dan-pei-zhi/">
+        </link>
+        <updated>2020-03-27T18:19:21.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="目录">目录</h2>
+<p><strong><a href="#gridea%E7%9A%84%E4%B8%8B%E8%BD%BD">1. Gridea的下载</a></strong></p>
+<p><strong><a href="#gridea%E7%9A%84%E4%BB%8B%E7%BB%8D">2. Gridea的介绍</a></strong></p>
+<p><strong><a href="#gridea%E7%9A%84%E9%85%8D%E7%BD%AE">3. Gridea的简单配置</a></strong></p>
+<hr>
+<h2 id="gridea的下载">Gridea的下载</h2>
+<p><a href="https://gridea.dev/#started">下载网址</a></p>
+<p><a href="#%E7%9B%AE%E5%BD%95">返回目录</a></p>
+<h2 id="gridea的介绍">Gridea的介绍</h2>
+<ul>
+<li>定义：gridea是基于github pages和coding pages（后者没用过）的静态<strong>博客</strong>管理工具</li>
+</ul>
+<blockquote>
+<p>静态页面：网页的代码都在页面中，不需要执行asp.php.net等程序生成客户端网页代码的网页。</p>
+</blockquote>
+<p>支持Windows和Mac平台。它真的轻量！便捷！还好看（零基础小白疯狂打call！它真的真的会让自己很想很想学习，很想很想码字！）（有基础的就用hexo搭建博客吧）</p>
+<h2 id="gridea的配置">Gridea的配置</h2>
+<ul>
+<li>
+<p>前提我是用github来创建的域名，那就以github为例了。</p>
+<p>详细的说一下怎么配置。<strong>需要拥有github账户，git安装（在github文章中有介绍git配置）好，gridea安装好</strong></p>
+<figure data-type="image" tabindex="1"><img src="https://Radiantzy.github.io/post-images/1585331307424.png" alt="" loading="lazy"></figure>
+<ol>
+<li>
+<p>首先，我们需要在github里面创建一个库，那个库的仓库名，就是自己网站的域名，所以要考虑好哦，怎么创建库在<code>github创建</code>一文中有有介绍，可以再去看看那个。</p>
+<figure data-type="image" tabindex="2"><img src="https://Radiantzy.github.io/post-images/1585331848412.png" alt="" loading="lazy"></figure>
+</li>
+</ol>
+<p>​    请注意看上图的库名取法和勾选选项，这个选项勾选的意思就是直接把自己的库克隆到本地计   算机，并形成一个<code>readme</code>文件</p>
+<ol start="2">
+<li>
+<p>接着我们要创建一个token</p>
+<blockquote>
+<p>token是计算机术语：令牌，令牌是一种能够控制站点占有媒体的特殊帧，以区别数据帧及其他控制帧。token其实说的更通俗点可以叫暗号，在一些数据传输之前，要先进行暗号的核对，不同的暗号被授权不同的数据操作。</p>
+</blockquote>
+<p>点击github右上角个人头像，找到settings（设置），找到这个</p>
+<figure data-type="image" tabindex="3"><img src="https://Radiantzy.github.io/post-images/1585332278784.png" alt="" loading="lazy"></figure>
+</li>
+</ol>
+</li>
+</ul>
+<figure data-type="image" tabindex="4"><img src="https://Radiantzy.github.io/post-images/1585332278784.png" alt="" loading="lazy"></figure>
+<p>​				点击<img src="https://Radiantzy.github.io/post-images/1585332432783.png" alt="" loading="lazy"></p>
+<p>​	之后会让我们给token取名字，建议取与博客相关的名字，方便之后查找，下面还会给出很多选项，直接勾选第一个repo，然后滑到最下面确定就好了，会弹出一个框让核对一下密码，然后就创建好啦。</p>
+<p><strong>划重点！token生成的密码只会出现一次！所以把token名字和密码都备份了，省的之后找不着了</strong></p>
+<figure data-type="image" tabindex="5"><img src="https://Radiantzy.github.io/post-images/1585332521431.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://Radiantzy.github.io/post-images/1585332771225.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://Radiantzy.github.io/post-images/1585333169349.png" alt="" loading="lazy"></figure>
+<p>如图所示填写自己相对应的信息，仓库用户名就是自己github的名称，其他的都看着写就行，域名就是刚刚创建的仓库名。cname(我也不晓得怎么填，就没填)，然后点一下远程连接，会显示成功，说明已经跟自己github账号接上轨了，就可以保存啦！这个时候你返回仓库看，就会看到自己刚刚创建的库里面多了很多文件嘻嘻嘻，然后就可以在gridea上为所欲为啦</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gridea中主题Next的下载，配置以及使用的记录]]></title>
         <id>https://Radiantzy.github.io/post/gridea-zhong-zhu-ti-next-de-xia-zai-pei-zhi-yi-ji-shi-yong-de-ji-lu/</id>
