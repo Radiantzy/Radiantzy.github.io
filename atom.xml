@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Radiantzy.github.io</id>
     <title>Radiantz</title>
-    <updated>2020-03-27T18:30:28.602Z</updated>
+    <updated>2020-04-01T16:52:40.026Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Radiantzy.github.io"/>
     <link rel="self" href="https://Radiantzy.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://Radiantzy.github.io/images/avatar.png</logo>
     <icon>https://Radiantzy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Radiantz</rights>
+    <entry>
+        <title type="html"><![CDATA[每日一题]]></title>
+        <id>https://Radiantzy.github.io/post/mei-ri-yi-ti/</id>
+        <link href="https://Radiantzy.github.io/post/mei-ri-yi-ti/">
+        </link>
+        <updated>2020-04-01T09:35:42.000Z</updated>
+        <content type="html"><![CDATA[<p>导引：鸽了三天的每日一题hhhh，今天补（冲！😄😄😄</p>
+<h2 id="目录">目录</h2>
+<h3 id="330日">3.30日</h3>
+<figure data-type="image" tabindex="1"><img src="https://Radiantzy.github.io/post-images/1585755088250.png" alt="" loading="lazy"></figure>
+<p><strong>提示：<a href="%5Bhttps://baike.baidu.com/item/%E6%96%AF%E7%89%B9%E6%9E%97%E5%85%AC%E5%BC%8F/9583086?fr=aladdin%5D(https://baike.baidu.com/item/%E6%96%AF%E7%89%B9%E6%9E%97%E5%85%AC%E5%BC%8F/9583086?fr=aladdin)">斯特林公式</a>，另外要灵活运用定积分的定义</strong></p>
+<h4 id="查看答案"><a href="#%E7%AD%94%E6%A1%881">查看答案</a></h4>
+<h3 id="331日">3.31日</h3>
+<h4 id="查看答案-2"><a href="#%E7%AD%94%E6%A1%882">查看答案</a></h4>
+<h3 id="41日">4.1日</h3>
+<h4 id="查看答案-3"><a href="#%E7%AD%94%E6%A1%883">查看答案</a></h4>
+<h2 id="答案">答案</h2>
+<h3 id="答案1">答案1</h3>
+<figure data-type="image" tabindex="2"><img src="https://Radiantzy.github.io/post-images/1585759732296.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://Radiantzy.github.io/post-images/1585759907776.png" alt="" loading="lazy"></figure>
+<h3 id="答案2">答案2</h3>
+<h3 id="答案3">答案3</h3>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ 记录Gridea的下载介绍和简单配置]]></title>
         <id>https://Radiantzy.github.io/post/ji-lu-gridea-de-xia-zai-jie-shao-he-jian-dan-pei-zhi/</id>
