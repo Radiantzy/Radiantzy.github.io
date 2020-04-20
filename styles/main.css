@@ -1987,12 +1987,12 @@ blockquote {
     .nav-toggle .line {
       background-color: #d3f9d8 !important;
     }.header {
-        width: 960px;
+        width: 1080px;
         margin: 0 auto;
       }
 
       .main-continer {
-        width: 960px;
+        width: 1080px;
         margin: 0 auto;
       }
     body {
@@ -2092,10 +2092,10 @@ blockquote {
       background-color: #ffffffd8;
     }
     .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
-      border-radius: 20px;
+      border-radius: 10px;
     }
     .pisces .blog-header, .pisces .sidebar-wrapper, .pisces .article-wrapper, .pisces .section, .pisces .sidebar-box, .pisces .friends-section {
-      border-radius: 20px;
+      border-radius: 10px;
     }
       .site-meta {
         background: #0c8599 !important;
@@ -2112,5 +2112,5 @@ blockquote {
     .mist .site-title i {
       background: #212529d8;
     }.box-shadow-wrapper {
-      box-shadow: none !important;
+      padding: 10px;
     }
