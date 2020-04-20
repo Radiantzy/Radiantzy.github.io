@@ -2092,10 +2092,10 @@ blockquote {
       background-color: #ffffffd8;
     }
     .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
-      border-radius: 10px;
+      border-radius: 20px;
     }
     .pisces .blog-header, .pisces .sidebar-wrapper, .pisces .article-wrapper, .pisces .section, .pisces .sidebar-box, .pisces .friends-section {
-      border-radius: 10px;
+      border-radius: 20px;
     }
       .site-meta {
         background: #0c8599 !important;
@@ -2111,8 +2111,6 @@ blockquote {
     }
     .mist .site-title i {
       background: #212529d8;
-    }.box-shadow-wrapper {
-      padding: 10px;
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }
