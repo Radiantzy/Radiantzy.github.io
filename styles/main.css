@@ -2194,7 +2194,9 @@ pre > span.copy-code:hover {
     }
     .mist .site-title i {
       background: #212529d8;
-    }.box-shadow-wrapper {
+    }.bg-img img {
+        filter: blur(85px)
+      }.box-shadow-wrapper {
       padding: 10px;
     }body {
       cursor: default;
