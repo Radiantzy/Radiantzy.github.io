@@ -2194,16 +2194,14 @@ pre > span.copy-code:hover {
     }
     .mist .site-title i {
       background: #212529d8;
-    }.bg-img img {
-        filter: blur(85px)
-      }.box-shadow-wrapper {
+    }.post-body,mjx-container {overflow-y:hidden !important;}.box-shadow-wrapper {
       padding: 10px;
     }body {
-      cursor: url('https://cdn.jsdelivr.net/gh/Radiantzy/Radiantzy.github.io@0.0.8/media/curs/normal.cur'), default;
+      cursor: url('https://cdn.jsdelivr.net/gh/Radiantzy/Radiantzy.github.io@0.1.2/media/curs/normal.cur'), default;
     }a {
-      cursor: url('https://cdn.jsdelivr.net/gh/Radiantzy/Radiantzy.github.io@0.0.8/media/curs/link.cur'), pointer !important;
+      cursor: url('https://cdn.jsdelivr.net/gh/Radiantzy/Radiantzy.github.io@0.1.2/media/curs/link.cur'), pointer !important;
     }input, textarea, code {
-      cursor: url('https://cdn.jsdelivr.net/gh/Radiantzy/Radiantzy.github.io@0.0.8/media/curs/texto.cur'), text !important;
+      cursor: url('https://cdn.jsdelivr.net/gh/Radiantzy/Radiantzy.github.io@0.1.2/media/curs/texto.cur'), text !important;
     }code > span.copy-code {
       cursor: pointer;
     }.post img {
