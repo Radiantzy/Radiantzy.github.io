@@ -2199,11 +2199,11 @@ pre > span.copy-code:hover {
       }.box-shadow-wrapper {
       padding: 10px;
     }body {
-      cursor: default;
+      cursor: url('https://cdn.jsdelivr.net/gh/Radiantzy/Radiantzy.github.io@0.0.8/media/curs/normal.cur'), default;
     }a {
-      cursor: pointer;
+      cursor: url('https://cdn.jsdelivr.net/gh/Radiantzy/Radiantzy.github.io@0.0.8/media/curs/link.cur'), pointer !important;
     }input, textarea, code {
-      cursor: text;
+      cursor: url('https://cdn.jsdelivr.net/gh/Radiantzy/Radiantzy.github.io@0.0.8/media/curs/texto.cur'), text !important;
     }code > span.copy-code {
       cursor: pointer;
     }.post img {
