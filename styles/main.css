@@ -2054,7 +2054,7 @@ p > code {
 .bg-color .bg-color {
       background: transparent !important;
     }body {
-      background-color: #f1f3f5;
+      background-color: #fff;
     }.header {
         width: 1080px;
         margin: 0 auto;
@@ -2065,16 +2065,16 @@ p > code {
         margin: 0 auto;
       }
     body {
-      color: #495057;
+      color: #222;
     }
     .next-md-body {
-      color: #495057;
+      color: #222;
     }
     .next-md-body h1, .next-md-body h2 {
-      border-bottom-color: #495057;
+      border-bottom-color: #222;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #08556299;
+      background: #f1f3f599;
     }h1, h2, h3, h4, h5, h6 {
       color: #212529;
     }
@@ -2090,42 +2090,42 @@ p > code {
     .node-title::before {
       background-color: #212529;
     }a {
-      color: #343a40;
+      color: #222;
     }
     
     .next-md-body a, .friends-box a  {
-      color: #343a40;
-      border-bottom: 1px solid #343a40;
+      color: #222;
+      border-bottom: 1px solid #222;
     }a:hover {
-      color: #000;
+      color: #222;
     }
     
     .archive-timeline-box .tag-node:hover::before {
-      background-color: #000;
+      background-color: #222;
     }
     
     .markdownIt-TOC a:hover {
-      color: #000;
-      border-bottom-color: #000;
+      color: #222;
+      border-bottom-color: #222;
     }
 
     .next-md-body a:hover, .friends-box a:hover {
-      color: #000;
-      border-bottom-color: #000;
+      color: #222;
+      border-bottom-color: #222;
     }
     .nav-toggle .line {
       background-color:  !important;
     }
       .nav-item a {
-        color:  #212529;
+        color:  #222;
       }.nav-item a:hover {
-        color: #085562;
+        color: #000;
       }.nav-item-active {
-      background: #08556299;
+      background: #eeeeee99;
     }
 
     .nav-item:hover {
-      background: #08556299;
+      background: #eeeeee99;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2170,19 +2170,19 @@ p > code {
       border-radius: 4px;
     }
     .site-meta {
-      background: #085562 !important;
+      background: #222 !important;
     }
     .head-top-line {
-      background: #085562;
+      background: #222;
     }
     .brand {
-      background: #08556299;
+      background: #22222299;
     }
     .main-title, .brand {
-      color: #f8f9fa !important;
+      color: #fff !important;
     }
     .mist .site-title i {
-      background: #f8f9fa99;
+      background: #ffffff99;
     }.post-body,mjx-container {overflow-y:hidden !important;}body {
       cursor: url('/media/curs/normal.cur'), default;
     }a {
