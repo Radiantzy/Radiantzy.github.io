@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="帮助自己收获更多的地方！">
 <meta name="theme-color" content="#222">
-<title>树莓派笔记本当作显示屏操作 | Radiantz</title>
+<title>111 | Radiantz</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1625931739529">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -55,7 +55,7 @@
 
 
 
-  <meta name="description" content="树莓派笔记本当作显示屏操作" />
+  <meta name="description" content="111" />
   <meta name="keywords" content="" />
 </head>
 
@@ -207,8 +207,7 @@
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            <div class="post-side-meta" id="post_side_meta">
-              
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -277,196 +276,6 @@
   </div>
 
 </div>
-            </div>
-            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
-              <div class="toc-box right-motion">
-  <div class="toc-wrapper auto-number no_compress"
-    id="toc_wrapper">
-    <ul class="markdownIt-TOC">
-<li><a href="#%E6%89%80%E9%9C%80%E9%9B%B6%E4%BB%B6%E5%92%8C%E6%AD%A5%E9%AA%A4">所需零件和步骤</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F">安装系统</a></li>
-<li><a href="#%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C">连接网络</a></li>
-<li><a href="#%E8%BF%9E%E6%8E%A5%E7%AC%94%E8%AE%B0%E6%9C%AC">连接笔记本</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AE">配置</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AE%E6%AD%A5%E9%AA%A4">配置步骤</a></li>
-</ul>
-
-  </div>
-</div>
-
-<script>
-
-  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
-  let active = 'active-show', activeClass = 'active-current';
-  let tocWrapper = document.querySelector('#toc_wrapper');
-  let tocContent = tocWrapper.children[0];
-  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
-
-  function addTocNumber(elem, deep) {
-    if (!elem) {
-      return;
-    }
-    let prop = elem.__proto__;
-
-    if (prop === HTMLUListElement.prototype) {
-      for (let i = 0; i < elem.children.length; i++) {
-        addTocNumber(elem.children[i], deep + (i + 1) + '.');
-      }
-    } else if (prop === HTMLLIElement.prototype) {
-      // 保存li元素
-      if (elem.children[0] && elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
-        lList.push(elem);
-      }
-      for (let i = 0; i < elem.children.length; i++) {
-        let cur = elem.children[i];
-        if (cur.__proto__ === HTMLAnchorElement.prototype) {
-          if (autoNumber) {
-            cur.text = deep + ' ' + cur.text;
-          }
-        } else if (cur.__proto__ === HTMLUListElement.prototype) {
-          addTocNumber(cur, deep);
-        }
-      }
-    }
-  }
-
-  function removeParentActiveClass() {
-    let parents = tocContent.querySelectorAll('.' + active)
-    parents.forEach(function (elem) {
-      elem.classList.remove(active);
-    });
-  }
-
-  function addActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.add(activeClass);
-    }
-  }
-
-  function removeActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.remove(activeClass);
-    }
-  }
-
-  function addActiveLiElemment(elem, parent) {
-    if (!elem || elem === parent) {
-      return;
-    } else {
-      if (elem.__proto__ === HTMLLIElement.prototype) {
-        elem.classList.add(active);
-      }
-      addActiveLiElemment(elem.parentElement, parent);
-    }
-  }
-
-  function showToc() {
-    if (tocWrapper) {
-      postBody = document.querySelector('#post_body');
-      for (let i = 0; i < postBody.children.length; i++) {
-        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
-          hList.push(postBody.children[i]);
-        }
-      }
-      if (tocWrapper.classList.contains('compress')) {
-        tocContent.classList.add('closed');
-      } else if (tocWrapper.classList.contains('no_compress')) {
-        tocContent.classList.add('expanded');
-      } else {
-        if (hList.length > 10) {
-          active = 'active-hidden'
-          tocContent.classList.add('closed');
-        } else {
-          tocContent.classList.add('expanded');
-        }
-      }
-    }
-  }
-
-  (function () {
-    // 处理不是从#一级标题开始目录
-    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
-      let con = tocContent.children[0].children[0];
-      tocContent.innerHTML = con.innerHTML;
-    }
-    let markdownItTOC = document.querySelector('.markdownIt-TOC');
-    let innerHeight = window.innerHeight;
-    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
-    addTocNumber(tocContent, '');
-  })();
-
-  document.addEventListener('scroll', function (e) {
-    if (lList.length <= 0) {
-      return;
-    }
-    let scrollTop = document.scrollingElement.scrollTop + 10;
-    let dir;
-
-    if (lastTop - scrollTop > 0) {
-      dir = 'up';
-    } else {
-      dir = 'down';
-    }
-
-    lastTop = scrollTop;
-    if (scrollTop <= 0) {
-      if (lastIndex >= 0 && lastIndex < hList.length) {
-        lList[lastIndex].classList.remove(activeClass);
-      }
-      return;
-    }
-
-    let current = 0, hasFind = false;
-    for (let i = 0; i < hList.length; i++) {
-      if (hList[i].offsetTop > scrollTop) {
-        current = i;
-        hasFind = true;
-        break;
-      }
-    }
-    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
-      current = hList.length - 1;
-    } else {
-      current--;
-    }
-    if (dir === 'down') {
-      if (current > lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex)
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    } else {
-      if (current < lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex);
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    }
-  });
-
-
-  window.addEventListener('load', function () {
-    showToc();
-    document.querySelector('#sidebar').style = 'display: block;';
-    tocWrapper.classList.add('toc-active');
-    setTimeout(function () {
-      if ("createEvent" in document) {
-        let evt = document.createEvent("HTMLEvents");
-        evt.initEvent("scroll", false, true);
-        document.dispatchEvent(evt);
-      }
-      else {
-        document.fireEvent("scroll");
-      }
-    }, 500)
-  })
-
-</script>
-            </div>
           
         
       </div>
@@ -554,8 +363,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://Radiantzy.github.io/post/shu-mei-pai-bi-ji-ben-dang-zuo-xian-shi-ping-cao-zuo/">
-      树莓派笔记本当作显示屏操作
+    <a class="post-title-link" href="https://Radiantzy.github.io/post/111/">
+      111
     </a>
   </h1>
   <div class="post-meta">
@@ -563,23 +372,23 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2021-06-09 20:03:57">2021-06-09</span>
+      <span class="publish-time" data-t="2021-07-10 23:37:19">2021-07-10</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>4<span class="language" data-lan="minute">分钟</span></span>
+      <span>0<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>1049<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>0<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
     
-    <span id="/post/shu-mei-pai-bi-ji-ben-dang-zuo-xian-shi-ping-cao-zuo/" data-flag-title="树莓派笔记本当作显示屏操作" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/111/" data-flag-title="111" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
@@ -588,64 +397,7 @@
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <h1 id="所需零件和步骤">所需零件和步骤</h1>
-<ul>
-<li>需要树莓派一个，路由器一个，网线一条（用于连接路由器），笔记本一台，想用无线可以买多一个无线网卡，我觉得用无线网卡很方便，不用连着网线，想放哪里都行。</li>
-<li>提前下载好需要的文件：树莓派的官网下载raspbian:https://www.raspberrypi.org/downloads/</li>
-<li>格式化内存卡 SDFormatter：http://pan.baidu.com/s/1dDLMVq5</li>
-<li>写入镜像 (14G,谨慎安装)win32diskimager ：http://pan.baidu.com/s/1bnWGhbx</li>
-<li>利用putty进行ssh连接 ： http://pan.baidu.com/s/1dEp9iXN</li>
-</ul>
-<h1 id="安装系统">安装系统</h1>
-<ul>
-<li>下载完raspbian后，解压到电脑上没有中文字符的文件夹，得到.img镜像文件</li>
-<li>下载SDFormatter后打开，格式化内存卡；</li>
-<li>将TF卡（最少8G容量）插入读卡器，在电脑上打开 win32diskimager.exe，找到镜像，选好储存卡符，点击write写入镜像；大概需要几分钟时间，系统安装成功后会提示“Write Successful&quot;；这时在我的电脑TF卡只显示剩下几十M，这是正常的！由于TF卡在装了Linux系统后，分为三种格式，其中只有一种格式能被Windows系统识别，也就是剩下那几十M；然后把内存卡插进树莓派的插槽。</li>
-</ul>
-<h1 id="连接网络">连接网络</h1>
-<ul>
-<li>把网线接上树莓派，可以直接用安卓手机充电器给树莓派供电</li>
-<li>在浏览器上打开路由器的后台，找到一个叫raspberrypi的IP，你也可以通过DHCP绑定IP，这样路由器分给树莓派的IP就只有一个了；然后打开putty，把刚才的IP地址写上去，也可以保存下来，方便下次登录</li>
-<li>连接后，输入用户名pi，回车，输入密码raspberry,此时输入密码不会提示你是否输入，没有显示***字符，输完后回车，就进到树莓派的命令行了</li>
-</ul>
-<h1 id="连接笔记本">连接笔记本</h1>
-<ul>
-<li>
-<p>强烈建议使用电脑自带的xrdp服务，当然用VNC也可以，在这里说的是安装xrdp;在命令行里输入<code>pi@raspberrypi:~ $ sudo apt-get install xrdp</code>后回车，等待安装，期间需要按Y继续；</p>
-</li>
-<li>
-<p>安装完成后，在windows附件里找到远程桌面连接，打开后，输入刚才的IP地址，点击连接，连接后输入  用户名和密码  ，点击OK，就可以进到桌面了</p>
-</li>
-<li>
-<p>实现树莓派远程桌面显示，安装VNC和xrdp</p>
-</li>
-</ul>
-<p><code>sudo apt-get install vnc4server tightvncserver</code></p>
-<p><code>sudo apt-get install xrdp</code></p>
-<h1 id="配置">配置</h1>
-<ul>
-<li>点击红色箭头的位置</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="https://Radiantzy.github.io/post-images/1623240274155.png" alt="" loading="lazy"></figure>
-<ul>
-<li>输入<code>sudo raspi-config</code></li>
-</ul>
-<h1 id="配置步骤">配置步骤</h1>
-<p>以下1、3、5步必须做，其他可做了解</p>
-<ol>
-<li>Expand Filesystem，将系统扩展到整个TF卡，必须执行，一路敲回车即可；</li>
-<li>修改密码及账号，若要修改，请记住；</li>
-<li>开机启动到桌面，或Scratch(编程寓教工具)；进入条目后，找到有“desktop”的条目，一路回车（以下设置完成后，重启即可自动进入桌面）；</li>
-<li>在开机时等待网络；</li>
-<li>地区/语言（汉化）：进入本项后，选择Change locale并进入，用键盘上下键找到en_GB.UTF-8 UTF-8，敲空格键去掉前面的*，依次找到 en_US.UTF-8 UTF-8、zh_CN UTF-8 UTF-8、  zh_CN GBK GBK，敲空格键打*，然后利用Tab键将光标移到OK，回车进入下一步。选择zh_CN UTF-8 UTF-8，再选OK，回车，等待几分钟。汉化至此完成；</li>
-<li>启动PI的摄像头模块，如果想启用，选择Enable，禁用选择Disable就行了；</li>
-<li>将树莓派加入Rastrack网站；</li>
-<li>超频；一般不用超频，谨慎操作，提前做好散热，夏天散热量大；</li>
-<li>高级选项，包括Overscan、Hostname、Memory Split（内存分配）、SSH、Spi、Update；</li>
-<li>设置完成后，光标移到<Finish>，回车，自动重启。</li>
-<li>Raspbian继承了Debian的一个毛病：就算选了默认中文，也不会自动安装中文字体。所以只设置系统支持中文，也无法马上显示汉字。进入桌面会出现乱码：</li>
-<li>继续打开终端，在命令行上输入<code>sudo apt-get -y install ttf-wqy-zenhei</code>,不必理会乱码，命令跑完了重启，输入<code>sudo reboot</code>回车， 至此，中文系统就安装好了</li>
-</ol>
+              <figure data-type="image" tabindex="1"><img src="https://Radiantzy.github.io/post-images/1625931445616.png" alt="" loading="lazy"></figure>
 
             </div>
             
@@ -658,7 +410,7 @@
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://Radiantzy.github.io/post/shu-mei-pai-bi-ji-ben-dang-zuo-xian-shi-ping-cao-zuo/" title="树莓派笔记本当作显示屏操作">https://Radiantzy.github.io/post/shu-mei-pai-bi-ji-ben-dang-zuo-xian-shi-ping-cao-zuo/</a>
+      <a href="https://Radiantzy.github.io/post/111/" title="111">https://Radiantzy.github.io/post/111/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -671,15 +423,11 @@
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="STM32串口控制舵机" href="https://Radiantzy.github.io/post/stm32-chuan-kou-kong-zhi-duo-ji/">STM32串口控制舵机</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="STM32串口控制舵机" href="https://Radiantzy.github.io/post/stm32-chuan-kou-kong-zhi-duo-ji/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="树莓派：语音识别模块" href="https://Radiantzy.github.io/post/shu-mei-pai-yu-yin-shi-bie-mo-kuai/">树莓派：语音识别模块</a>
-        <a class="nav-mobile-next" title="树莓派：语音识别模块" href="https://Radiantzy.github.io/post/shu-mei-pai-yu-yin-shi-bie-mo-kuai/">下一篇</a>
+        <a class="nav-pc-next" title="win电脑更换动态壁纸以及鼠标样式" href="https://Radiantzy.github.io/post/win-dian-nao-geng-huan-dong-tai-bi-zhi-yi-ji-shu-biao-yang-shi/">win电脑更换动态壁纸以及鼠标样式</a>
+        <a class="nav-mobile-next" title="win电脑更换动态壁纸以及鼠标样式" href="https://Radiantzy.github.io/post/win-dian-nao-geng-huan-dong-tai-bi-zhi-yi-ji-shu-biao-yang-shi/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
