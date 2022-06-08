@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Radiantzy.github.io</id>
     <title>Radiantz</title>
-    <updated>2022-06-08T06:23:02.763Z</updated>
+    <updated>2022-06-08T06:36:36.297Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Radiantzy.github.io"/>
     <link rel="self" href="https://Radiantzy.github.io/atom.xml"/>
@@ -10,6 +10,250 @@
     <logo>https://Radiantzy.github.io/images/avatar.png</logo>
     <icon>https://Radiantzy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Radiantz</rights>
+    <entry>
+        <title type="html"><![CDATA[基于S7-1500的单步六层电梯教程]]></title>
+        <id>https://Radiantzy.github.io/post/ji-yu-s7-1500-de-dan-bu-liu-ceng-dian-ti-jiao-cheng/</id>
+        <link href="https://Radiantzy.github.io/post/ji-yu-s7-1500-de-dan-bu-liu-ceng-dian-ti-jiao-cheng/">
+        </link>
+        <updated>2022-06-08T06:35:06.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="相关软件和资料下载">相关软件和资料下载</h1>
+<h2 id="西门子竞赛官网关于2020单步六层电梯"><a href="http://www.siemenscup-cimc.org.cn/Project/PorjectResourceDetail?id=2">西门子竞赛官网（关于2020单步六层电梯）</a></h2>
+<h2 id="博途v16软件官网下载"><a href="https://support.industry.siemens.com/cs/document/109772803/simatic-step-7-incl-safety-and-wincc-v16-trial-download?dti=0&amp;dl=en&amp;lc=zh-CN">博途v16软件官网下载</a></h2>
+<p><strong>博途软件是比较难装的，我自己都经常装到蓝屏或者反复开关机，可以选择看<a href="https://blog.csdn.net/qq_37424623/article/details/118099796?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165464816616780357227917%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165464816616780357227917&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-118099796-null-null.142%5Ev11%5Epc_search_result_control_group,157%5Ev13%5Econtrol&amp;utm_term=%E5%8D%9A%E9%80%94v16%E4%B8%8B%E8%BD%BD&amp;spm=1018.2226.3001.4187">教程</a>下载或者找万能某宝代下~</strong></p>
+<p>在下载链接内看到这个，或者下DVD2,DVD3都一样</p>
+<figure data-type="image" tabindex="1"><img src="https://Radiantzy.github.io/post-images/1654648329320.png" alt="" loading="lazy"></figure>
+<p><strong>注意这个下完了之后应该会出现很多个plc的图标，安啦安啦，我们主要是用TIA Portal V16</strong></p>
+<figure data-type="image" tabindex="2"><img src="https://Radiantzy.github.io/post-images/1654649219457.png" alt="" loading="lazy"></figure>
+<h2 id="软plc下载"><a href="https://pan.baidu.com/s/170b_cJ_jPsfmPbi88YjRlQ?pwd=2ndi">软plc下载</a>  提取码：2ndi</h2>
+<p>该软件安装完成后得到PLCSIM Advanced2.0</p>
+<figure data-type="image" tabindex="3"><img src="https://Radiantzy.github.io/post-images/1654649028947.png" alt="" loading="lazy"></figure>
+<h2 id="eet-basic电梯仿真软件下载"><a href="http://bbs.siemenscup-cimc.org.cn/forum.php?mod=viewthread&amp;tid=4183&amp;extra=">EET Basic电梯仿真软件下载</a></h2>
+<p>该软件安装完成后对应界面如下：</p>
+<figure data-type="image" tabindex="4"><img src="https://Radiantzy.github.io/post-images/1654648898260.png" alt="" loading="lazy"></figure>
+<p><strong>注意，要完成单步六层电梯的操作，以下几个图标是必须有的，wincc和对应许可证的图标可以没有</strong></p>
+<figure data-type="image" tabindex="5"><img src="https://Radiantzy.github.io/post-images/1654648707637.png" alt="" loading="lazy"></figure>
+<h1 id="单步六层电梯程序块及逻辑分块介绍">单步六层电梯程序块及逻辑分块介绍</h1>
+<p><strong>教程适应于有plc操作基础的小白，指只是对电梯编程逻辑不清楚的小白，不适合连plc基本操作都不会的小白，那样的话需要先学习博途软件的使用，贴个<a href="https://www.bilibili.com/video/BV1Mb4y1X7BR?spm_id_from=333.337.search-card.all.click">学习链接</a></strong></p>
+<p><strong>也可以自行去b站搜教程，对应cctalk也有相关教程</strong></p>
+<p><strong>我是二次咀嚼前人的东西，然后自己融合一点心得体会写了一点，后面课设遇到什么问题还会在程序中更新，贴一个<a href="https://blog.csdn.net/qq_44808429/article/details/114574368?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165452460016781667843976%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165452460016781667843976&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-114574368-null-null.142%5Ev11%5Epc_search_result_control_group,157%5Ev13%5Econtrol&amp;utm_term=plc%E5%8D%95%E6%AD%A5%E5%85%AD%E5%B1%82&amp;spm=1018.2226.3001.4187">前人链接</a>，相关<a href="http://www.demodashi.com/demo/17351.html">程序</a>，直接点下载源码就好了qwq</strong></p>
+<h2 id="电梯初始化程序块介绍">电梯初始化程序块介绍</h2>
+<h3 id="程序内涉及名词介绍">程序内涉及名词介绍</h3>
+<p>因为程序中的一些注释是为了方便区分和简单的意思命名的，我后面会用大白话解释一下例如一些（上平层下平层信号的）意思。</p>
+<p>首先我们来了解一下电梯结构</p>
+<figure data-type="image" tabindex="6"><img src="https://Radiantzy.github.io/post-images/1654650621267.png" alt="" loading="lazy"></figure>
+<ul>
+<li><strong>上（下）平层传感器</strong>：可以理解为定位电梯位置，比如上下平层都卡到了5层轿厢应该到的位置，那么同时置1就代表轿厢到了5层啦！</li>
+<li><strong>上（下）端站第一（二）限位</strong>：这个是为了限制电梯轿厢不能持续向上（或者向下走），当传感器碰到这个位置置1后代表到了底层（或顶层）</li>
+<li><strong>自动运行信号</strong>：官方给的自启动信号</li>
+<li><strong>准备就绪信号</strong>：电梯自行完成初始化后输出已经完成初始化</li>
+</ul>
+<p>线上赛开始，官方给出自动运行信号示意开始，控制程序收到该信号后进行一系列初始化，之后发出“准备就绪”信号以示确认（eg：使电梯位于基站（1层）待命）</p>
+<p>输入的自动运行信号：脉冲信号</p>
+<p>输出的准备就绪信号为：持续的长信号</p>
+<ul>
+<li>
+<p><strong>初始化目的</strong>：plc起初不知道电梯停在第几层，让plc知道目前电梯在第几层</p>
+</li>
+<li>
+<p><strong>初始化结果</strong>：初始化到目标楼层，以准备就绪信号代表初始化完成</p>
+</li>
+</ul>
+<h3 id="逻辑说明">逻辑说明</h3>
+<p><strong>向下初始化为1层具体做法</strong>：（向上是一样的逻辑）</p>
+<ol>
+<li>
+<p>plc捕获到电梯自动运行信号，低速向下行驶（此时记得禁止高速表示严谨）</p>
+</li>
+<li>
+<p>需要让下行指令置1，表示在向下走，打开下行接触器，关闭上行接触器</p>
+<figure data-type="image" tabindex="7"><img src="https://Radiantzy.github.io/post-images/1654665997381.png" alt="" loading="lazy"></figure>
+<p>（这里需要强调下，上行接触器目的跟上平层接触器是一样的，就是定位电梯位置的qwq，下行同理）</p>
+<p><strong>另外有一点是需要明白的：上行命令是外界给的，统一完后给上行指示给plc，有很多种情况都会导致电梯上行，为了保证严谨性还是先汇总各种情况，再统一给plc发出上行指示，后期看程序也好纠错。</strong></p>
+</li>
+<li>
+<p>当向下碰到下端点第一限位，即换速，plc捕获到该限位由0-1，则改低速向上，示意到底了不能再往下降了</p>
+</li>
+<li>
+<p>此时不能继续下行，置0下行指示，置1上行指示（即低速上行），接触器同样设置好置0/1信号</p>
+</li>
+<li>
+<p>发出向上回一楼信号</p>
+</li>
+<li>
+<p>关闭向下初始化信号</p>
+</li>
+</ol>
+<figure data-type="image" tabindex="8"><img src="https://Radiantzy.github.io/post-images/1654666035653.png" alt="" loading="lazy"></figure>
+<p><strong>准备就绪信号的触发</strong></p>
+<ol>
+<li>当上平层传感器由0→1，电梯依次开始3级制动（即1，2，3级减速）</li>
+<li>当下平层传感器由0→1，表示电梯刚好就在这一层</li>
+<li>注意。1，2条要同时触发才能确定轿厢就停在了某一层</li>
+<li>此时所停层即准备就绪信号</li>
+</ol>
+<p>哦，具体程序中，到某一层后要记得打开风扇，照明（细节问题）</p>
+<h2 id="数码管显示程序块">数码管显示程序块</h2>
+<ol>
+<li>先用abcdefg表示六个楼层的灯，这里就是数码管点亮数字</li>
+</ol>
+<figure data-type="image" tabindex="9"><img src="https://Radiantzy.github.io/post-images/1654667516472.png" alt="" loading="lazy"></figure>
+<ol start="2">
+<li>
+<p>然后就没了，也就是一个程序点灯。</p>
+<figure data-type="image" tabindex="10"><img src="https://Radiantzy.github.io/post-images/1654659909135.png" alt="" loading="lazy"></figure>
+</li>
+</ol>
+<h2 id="门锁信号程序块">门锁信号程序块</h2>
+<ol>
+<li><strong>轿厢门锁信号</strong>：轿厢锁门</li>
+<li><strong>1-6层门锁信号</strong>：各层打开门</li>
+</ol>
+<h3 id="逻辑说明-2">逻辑说明</h3>
+<p>为了保障安全，让电梯在各层及轿厢门锁信号都为1时开始运行，当轿厢门和各楼层的门都关好了，再去向上向下走</p>
+<h2 id="开门信号程序块">开门信号程序块</h2>
+<p><strong>电梯1-6层登记</strong>：确定电梯在第几层被需要，是一个确定信号，表示这一层被人需要了，需要让plc响应</p>
+<p><strong>本层召唤开门信号</strong>：顾名思义就是开门</p>
+<h3 id="逻辑说明-3">逻辑说明</h3>
+<ol>
+<li>
+<p>当电梯到了指定楼层，且电梯静止（上下平层接触器均置0），此时打开电梯门</p>
+</li>
+<li>
+<p>具体表明哪些情况会触发电梯x层登记：</p>
+<ul>
+<li>x层上（下）呼：即不是这层的电梯外部的人想到这层去</li>
+<li>x层内呼指示灯：电梯内的人想到这层去，导致内呼灯亮</li>
+</ul>
+<p>两种情况都可以触发表明电梯此时在x层被需要。</p>
+</li>
+<li>
+<p>当此时电梯在x层，且<strong>电梯x层登记</strong>这个信号被触发（置1），且没有<strong>上下接触器</strong>的启动（表明电梯此时是静止的）</p>
+</li>
+<li>
+<p>触发本层开门信号</p>
+</li>
+</ol>
+<figure data-type="image" tabindex="11"><img src="https://Radiantzy.github.io/post-images/1654666112006.png" alt="" loading="lazy"></figure>
+<p><strong>通俗的说就是某层人想进电梯，他按了上或下，电梯会响应，响应信号是电梯x层登记，表示这层被需要了，或是电梯内的人想在x层出去，也会触发登记信号</strong></p>
+<h2 id="上下行程序块">上下行程序块</h2>
+<h3 id="逻辑说明-4">逻辑说明</h3>
+<ol>
+<li>
+<p>首先要明白一点，上下行命令是外界给的，即<strong>人的需求</strong>，但是plc不能每一个信号都响应，所以把这些命令汇总给上下行指示，plc只需要识别上下行指示的信号有没有置1，那么就启动电机上行。</p>
+</li>
+<li>
+<p>具体表明哪些情况会给plc发出<strong>上行指示</strong>（下行同，不赘述）</p>
+<ul>
+<li>上行命令：外呼/内呼要求上行</li>
+<li>本层上行指示灯辅助：在电梯停靠层有人想上去</li>
+</ul>
+</li>
+<li>
+<p>其次分析一下具体可能导致<strong>上行命令</strong>触发的事件：</p>
+<ul>
+<li>你在2层，想上去，电梯在1层，得上来接你（以此类推）（<strong>是人跟电梯不同层</strong>）</li>
+</ul>
+</li>
+<li>
+<p>再来分析一下导致<strong>本层上行指示灯辅助</strong>置1的事件：（<strong>人跟电梯相同层</strong>）</p>
+<ul>
+<li>电梯既没有收到上行（或下行）命令，也没有触发上行（或下行）接触器，即显示电梯没有在运动，停靠在本层</li>
+<li>有了上呼信号</li>
+</ul>
+</li>
+<li>
+<p><strong>一定要注意多设置限定条件。不能让逻辑冲突！！！</strong></p>
+<p>即<strong>当给出上行命令时，就不能有本层上行指示灯辅助</strong>.</p>
+</li>
+</ol>
+<h2 id="上下楼层计数程序块">上下楼层计数程序块</h2>
+<p>问题：怎么确定轿厢就是到了某一层呢？</p>
+<p>答：两件事情同时发生：</p>
+<ul>
+<li>上行接触器开（表示电梯一直在行走）且触发了上平层接触器，表示轿厢到了某层的顶</li>
+<li>下行接触器开（表示电梯一直在行走）且触发了下平层接触器，表示轿厢到了某层的底</li>
+</ul>
+<figure data-type="image" tabindex="12"><img src="https://Radiantzy.github.io/post-images/1654666202814.png" alt="" loading="lazy"></figure>
+<p>通俗一点说就是：<strong>轿厢跟楼层完全适配了</strong></p>
+<p>那么电梯轿厢确定到了某一层。</p>
+<p><strong>楼层是不会动的，只有轿厢在动，可以看电梯内部结构图，当轿厢的接触器识别到刚好匹配电梯的上下层，说明刚好就是在这一层，不上也不下。</strong></p>
+<h2 id="按钮指示灯程序块">按钮指示灯程序块</h2>
+<p>一部电梯除了有上下行指示外，还有电梯内呼按钮指示灯跟电梯外呼上下行按钮指示灯。</p>
+<p><strong>平层信号</strong>：即将到目标层的上一层，需要做一些减速等的准备。</p>
+<p>即<strong>当电梯上下过程中，经过的楼层中有楼层上呼（或内呼）信号触发，则平层信号置1，表示将在该楼层停层。</strong></p>
+<h3 id="灯亮逻辑说明">灯亮逻辑说明</h3>
+<ol>
+<li>人在x层外，按了向上那么：<strong>a.</strong> <em><strong>x层外呼上行灯亮</strong></em>；**b. **x层上呼置1</li>
+</ol>
+<figure data-type="image" tabindex="13"><img src="https://Radiantzy.github.io/post-images/1654666312363.png" alt="" loading="lazy"></figure>
+<ol start="2">
+<li>
+<p>人在电梯内，按了x层，那么***x层内呼指示灯亮***</p>
+</li>
+<li>
+<p>当没有人按按钮时，当前楼层上下平层信号都触发，表示电梯到了这层，那么***内呼指示灯灭***。</p>
+</li>
+</ol>
+<h3 id="灯灭逻辑说明">灯灭逻辑说明</h3>
+<ol>
+<li>本层召唤开门信号置1，表示要开这层门那么***上下呼的信号就要灭***，因为已经准备开门了</li>
+<li>要向上去的时候，下呼灯灭，向下去的时候，上呼灯灭。</li>
+<li>电梯内的目标楼层，到了就灭</li>
+</ol>
+<h2 id="开关门程序块">开关门程序块</h2>
+<p>电梯到达指定楼层需要开门，开门后需要持续一段时间自动关门</p>
+<p>细节：超载或关门过程中有光幕（红外传感，人可能会临时堵门等）都要立即停止关门，重新触发开门接触器</p>
+<h3 id="开门逻辑说明">开门逻辑说明</h3>
+<ol>
+<li>
+<p>电梯停稳信号置1</p>
+</li>
+<li>
+<p>本层召唤开门信号置1</p>
+</li>
+<li>
+<p>已经在关门的时候重新触发开门有以下事件发生：</p>
+<ul>
+<li>轿内开门按钮被触发</li>
+<li>有光幕信号产生</li>
+<li>超载</li>
+</ul>
+<p>三种情况发生任何一种，都会重新触发开门继电器</p>
+</li>
+</ol>
+<h3 id="关门逻辑说明">关门逻辑说明</h3>
+<ol>
+<li>同开门逻辑的相反，这里不过多赘述</li>
+</ol>
+<figure data-type="image" tabindex="14"><img src="https://Radiantzy.github.io/post-images/1654666655694.png" alt="" loading="lazy"></figure>
+<p><strong>解读这段代码就是，解释什么事件会触发外呼下行灯灭，即当上下平层都置1，表示电梯已经到了目标层，且平层信号为1即触发了就在本层停，这种情况下要开门，所以外呼灯就会灭</strong></p>
+<h3 id="开门锁上下行">开门锁上下行</h3>
+<p>当电梯门打开的时候，为了安全起见，把电梯锁死，不能让电梯再上下行</p>
+<p>即<strong>一开门，开门锁上下行信号就触发，当接受到关门到位信号后，开门锁上下行信号重新关闭，电梯可以重新启动</strong></p>
+<figure data-type="image" tabindex="15"><img src="https://Radiantzy.github.io/post-images/1654666834762.png" alt="" loading="lazy"></figure>
+<h2 id="启停模块">启停模块</h2>
+<h3 id="逻辑说明-5">逻辑说明</h3>
+<ol>
+<li>当上行命令触发后，确认没有什么故障情况（超载等）就打开上行接触器，开启低速运行</li>
+<li>延时一段时间后，切换低速运行到高速运行</li>
+<li>当上行到平层信号触发时（平层信号前面解释过了，就是目标楼层的上一层），就换低速运行。把前面涉及到的信号都复位。</li>
+</ol>
+<figure data-type="image" tabindex="16"><img src="https://Radiantzy.github.io/post-images/1654666873635.png" alt="" loading="lazy"></figure>
+<h2 id="三级制动模块">三级制动模块</h2>
+<h3 id="逻辑说明-6">逻辑说明</h3>
+<ol>
+<li>
+<p>延时延时再延时完成一二三级制动，SRSR不断替换</p>
+</li>
+<li>
+<p>当上平层信号置1，下平层信号捕捉到上升沿，就发出<strong>电梯停稳</strong>信号</p>
+</li>
+<li>
+<p>复位接触器和速度</p>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[win电脑更换动态壁纸以及鼠标样式]]></title>
         <id>https://Radiantzy.github.io/post/win-dian-nao-geng-huan-dong-tai-bi-zhi-yi-ji-shu-biao-yang-shi/</id>
@@ -1175,248 +1419,6 @@ INPUT0端口   用短路帽接上AIN0，选择0-5V可调电压接入电路</p>
 <p>一切都配置好之后，点右上角的generate code（生成代码）那么我们就可以得到我们想要的代码块，会自己调用，再修改接口完成我们所需操作。</p>
 <p>我们可以直接在keil5里面打开（依赖于之前选的MDK-ARM）。如下图</p>
 <figure data-type="image" tabindex="6"><img src="https://Radiantzy.github.io/post-images/1616247347404.png" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[数模层次分析法及理解]]></title>
-        <id>https://Radiantzy.github.io/post/shu-mo-ceng-ci-fen-xi-fa-ji-li-jie/</id>
-        <link href="https://Radiantzy.github.io/post/shu-mo-ceng-ci-fen-xi-fa-ji-li-jie/">
-        </link>
-        <updated>2021-01-22T13:55:07.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>看了清风大大的建模视频在此做笔记记录学习情况，吹爆清风的建模视频！想要了解或者学习的可以先看<a href="https://www.bilibili.com/video/BV1DW411s7wi?from=search&amp;seid=17634171141962206209">清风视频</a>学习，每一节内容都很详细，可自行付费购买</strong><br>
-<strong>主要用于解决评价类问题，例如选择哪种方法最好，哪个项目最优等</strong></p>
-<ol>
-<li>
-<p><strong>所包含内容的权重和为1</strong></p>
-</li>
-<li>
-<p><strong>每一个指标权重相乘比较（算期望）</strong></p>
-</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"></th>
-<th>指标权重</th>
-<th>方案1</th>
-<th>方案2</th>
-<th>...</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">指标1</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align:left">指标2</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align:left">...</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>按照如上格式写出指标（各项依据所占的百分比）与方案（要选择的内容）。其中指标权重总和为1（指标权重列），某一指标下的所有方案占比总和为1 。</p>
-<ol>
-<li>凡出现<strong>确定评价指标，形成评价体系</strong>等话语，即可以归结为<strong>评价类问题</strong>，看到评价类问题要抽象出以下两点：</li>
-</ol>
-<ul>
-<li>评价的目标是什么?(要达成什么样的目的)</li>
-<li>为了达到这个目标有哪几种可选方案？</li>
-<li>评价的指标是什么？（评判依据是什么，通过背景材料，常识，以及网上搜集到的参考资料结合筛选最合适的指标。可从知网上搜索等。）</li>
-</ul>
-<ol start="4">
-<li>确定指标权重时，一次性考虑所有因素往往会顾此失彼考虑不周，此时选择先<strong>两两指标比较</strong>，最后根据两两比较的结果来推算出权重。“分而治之”</li>
-</ol>
-<ul>
-<li>可用重要程度1-9标号来确定指标占比（确定权重）</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>标度</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>两个因素相比，具有同样重要性</td>
-</tr>
-<tr>
-<td>3</td>
-<td>两个因素相比，一个因素比另一个因素稍微重要</td>
-</tr>
-<tr>
-<td>5</td>
-<td>两个因素相比，一个因素比另一个因素明显重要</td>
-</tr>
-<tr>
-<td>7</td>
-<td>强烈重要</td>
-</tr>
-<tr>
-<td>9</td>
-<td>极端重要</td>
-</tr>
-<tr>
-<td>2，4，6，8</td>
-<td>上述两相邻判断的中值</td>
-</tr>
-<tr>
-<td>倒数</td>
-<td>A和B相比如果标度为3，那么B和A相比就是1/3</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>指标1</th>
-<th>指标2</th>
-<th>指标3</th>
-<th>指标4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>指标1</td>
-<td>1</td>
-<td>2</td>
-<td>1/4</td>
-<td>3</td>
-</tr>
-<tr>
-<td>指标2</td>
-<td>1/2</td>
-<td>1</td>
-<td>1/8</td>
-<td>1.5</td>
-</tr>
-<tr>
-<td>指标3</td>
-<td>4</td>
-<td>8</td>
-<td>1</td>
-<td>12</td>
-</tr>
-<tr>
-<td>指标4</td>
-<td>1/3</td>
-<td>2/3</td>
-<td>1/12</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
-<p>如上图例子，为4×4方阵，记作A，对应元素<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">a_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></p>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">a_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>的意思是，与指标 j 相比，i 的重要程度</li>
-<li>当 i = j 时，两个指标相同，因此同等重要极为1 ，这就解释了主对角线元素为1</li>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_{ij}&gt;0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8252079999999999em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 且满足<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>×</mo><msub><mi>a</mi><mrow><mi>j</mi><mi>i</mi></mrow></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_{ij}×a_{ji}=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8694379999999999em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> （称满足这一条件的矩阵为<strong>正互反矩阵</strong>（<strong>判断矩阵</strong>））</li>
-</ul>
-<ol start="5">
-<li>一致矩阵</li>
-</ol>
-<p>若矩阵一致，则<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi>i</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">重</mi><mi mathvariant="normal">要</mi><mi mathvariant="normal">程</mi><mi mathvariant="normal">度</mi></mrow><mrow><mi>j</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">重</mi><mi mathvariant="normal">要</mi><mi mathvariant="normal">程</mi><mi mathvariant="normal">度</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">a_{ij}=\frac{i的重要程度}{j的重要程度}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.3367719999999998em;vertical-align:-0.481108em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.855664em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mord cjk_fallback mtight">的</span><span class="mord cjk_fallback mtight">重</span><span class="mord cjk_fallback mtight">要</span><span class="mord cjk_fallback mtight">程</span><span class="mord cjk_fallback mtight">度</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord cjk_fallback mtight">的</span><span class="mord cjk_fallback mtight">重</span><span class="mord cjk_fallback mtight">要</span><span class="mord cjk_fallback mtight">程</span><span class="mord cjk_fallback mtight">度</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.481108em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi>j</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">重</mi><mi mathvariant="normal">要</mi><mi mathvariant="normal">程</mi><mi mathvariant="normal">度</mi></mrow><mrow><mi>k</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">重</mi><mi mathvariant="normal">要</mi><mi mathvariant="normal">程</mi><mi mathvariant="normal">度</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">a_{jk}=\frac{j的重要程度}{k的重要程度}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.252772em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.907772em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mord cjk_fallback mtight">的</span><span class="mord cjk_fallback mtight">重</span><span class="mord cjk_fallback mtight">要</span><span class="mord cjk_fallback mtight">程</span><span class="mord cjk_fallback mtight">度</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.446108em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mord cjk_fallback mtight">的</span><span class="mord cjk_fallback mtight">重</span><span class="mord cjk_fallback mtight">要</span><span class="mord cjk_fallback mtight">程</span><span class="mord cjk_fallback mtight">度</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>，那么按理说，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi>i</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">重</mi><mi mathvariant="normal">要</mi><mi mathvariant="normal">程</mi><mi mathvariant="normal">度</mi></mrow><mrow><mi>k</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">重</mi><mi mathvariant="normal">要</mi><mi mathvariant="normal">程</mi><mi mathvariant="normal">度</mi></mrow></mfrac><mo>=</mo><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>×</mo><msub><mi>a</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub></mrow><annotation encoding="application/x-tex">a_{ik}=\frac{i的重要程度}{k的重要程度}=a_{ij}×a_{jk}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.200664em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.855664em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mord cjk_fallback mtight">的</span><span class="mord cjk_fallback mtight">重</span><span class="mord cjk_fallback mtight">要</span><span class="mord cjk_fallback mtight">程</span><span class="mord cjk_fallback mtight">度</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord cjk_fallback mtight">的</span><span class="mord cjk_fallback mtight">重</span><span class="mord cjk_fallback mtight">要</span><span class="mord cjk_fallback mtight">程</span><span class="mord cjk_fallback mtight">度</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8694379999999999em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>。</p>
-<p>只要满足各行（各列）成倍数关系，且是正互反矩阵，可以称之为一致矩阵。</p>
-<p><strong>注意：在使用判断矩阵求权重之前，必须对其进行一致性检验，及判断其是否是一致矩阵</strong></p>
-<ol start="6">
-<li>一致性检验的步骤</li>
-</ol>
-<ul>
-<li>计算一致性指标CI</li>
-</ul>
-<p>​                      <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>I</mi><mo>=</mo><mfrac><mrow><msub><mi>λ</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>−</mo><mi>n</mi></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">CI=\frac{\lambda_{max}-n}{n-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.2995389999999998em;vertical-align:-0.403331em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8962079999999999em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4101em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.16454285714285719em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">a</span><span class="mord mathdefault mtight">x</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">−</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.403331em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
-<ul>
-<li>
-<p>查找对应的<strong>平均随机一致性指标RI</strong></p>
-</li>
-<li>
-<table>
-<thead>
-<tr>
-<th>n</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-<th>10</th>
-<th>11</th>
-<th>12</th>
-<th>13</th>
-<th>14</th>
-<th>15</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>RI</td>
-<td>0</td>
-<td>0</td>
-<td>0.52</td>
-<td>0.89</td>
-<td>1.12</td>
-<td>1.26</td>
-<td>1.36</td>
-<td>1.41</td>
-<td>1.46</td>
-<td>1.49</td>
-<td>1.52</td>
-<td>1.54</td>
-<td>1.56</td>
-<td>1.58</td>
-<td>1.59</td>
-</tr>
-</tbody>
-</table>
-<p>注：在实际运用中，n很少超过10，如果指标的个数大于10，则可考虑建立二级指标体系。</p>
-</li>
-<li>
-<p>计算<strong>一致性比例CR</strong></p>
-</li>
-</ul>
-<p>​                           <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>R</mi><mo>=</mo><mfrac><mrow><mi>C</mi><mi>I</mi></mrow><mrow><mi>R</mi><mi>I</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">CR=\frac{CI}{RI}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.217331em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.00773em;">R</span><span class="mord mathdefault mtight" style="margin-right:0.07847em;">I</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">C</span><span class="mord mathdefault mtight" style="margin-right:0.07847em;">I</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
-<p>如果CR&lt;0.1，则可认为判断矩阵的一致性可以接受，否则需要对判断矩阵进行修正。</p>
-<ol start="7">
-<li>一致矩阵计算权重</li>
-</ol>
-<p>方法一：算术平均法求权重</p>
-<p>a. 将判断矩阵按照列归一化，每个元素除以所在列的和，此时列顶指标就是比对的因素。</p>
-<p>b. 将归一化的各列相加，按行求和</p>
-<p>c. 将相加后得到的向量中每个元素除以n既可得到权重向量</p>
-<p>假设判断矩阵A=[a11 a12 ... a1n \enter a21 a22 \enter. ... ann]</p>
-<p>那么算术平均法求得的权重向量(i=1,2....n)</p>
-<p>​                            <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>ω</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>a</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">\omega_i=\frac{1}{n} \sum_{j=1}^{n} \frac{a_{ij}}{\sum_{k=1}^{n}a_{kj}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.415115em;vertical-align:-0.5700069999999999em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.43581800000000004em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.808712em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7046857142857144em;"><span style="top:-2.1785614285714283em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-2.8971428571428572em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.32143857142857146em;"><span></span></span></span></span></span></span><span class="mspace mtight" style="margin-right:0.19516666666666668em;"></span><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3487714285714287em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29011428571428566em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.50732em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2818857142857143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5700069999999999em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
-<p>方法二：几何平均法求权重</p>
-<p>a. 将A的元素按照行相乘得到一个新的列向量</p>
-<p>b. 将新的向量的每个分量开n次方</p>
-<p>c. 对该列向量进行归一化即可得到权重向量</p>
-<p>那么几何平均法求得的权重向量</p>
-<p>​  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>ω</mi><mi>i</mi></msub><mo>=</mo><mfrac><mrow><mo>(</mo><msubsup><mo>∏</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msup><mo>)</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></msup></mrow><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>(</mo><msubsup><mo>∏</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msup><mo>)</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\omega_i = \frac{(\prod_{j=1}^{n}a_{ij})^\frac{1}{n}}{\sum_{k=1}^{n}(\prod_{j=1}^{n}a_{ij})^\frac{1}{n}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.478744em;vertical-align:-0.9893719999999999em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.489372em;"><span style="top:-2.332855em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7046857142857144em;"><span style="top:-2.1785614285714283em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-2.8971428571428572em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.32143857142857146em;"><span></span></span></span></span></span></span><span class="mopen mtight">(</span><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:-0.0000050000000000050004em;">∏</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7046857142857144em;"><span style="top:-2.1785614285714283em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-2.8971428571428572em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.46032428571428574em;"><span></span></span></span></span></span></span><span class="mspace mtight" style="margin-right:0.19516666666666668em;"></span><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2818857142857143em;"><span></span></span></span></span></span></span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.224492857142857em;"><span style="top:-3.48775em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size1 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.03144em;"><span style="top:-2.468em;"><span class="pstrut" style="height:3em;"></span><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span><span style="top:-3.2255000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.387em;"><span class="pstrut" style="height:3em;"></span><span class="mord mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.532em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size1 size6"></span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.632227em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:-0.0000050000000000050004em;">∏</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7385428571428572em;"><span style="top:-2.1785614285714283em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.46032428571428574em;"><span></span></span></span></span></span></span><span class="mspace mtight" style="margin-right:0.19516666666666668em;"></span><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2818857142857143em;"><span></span></span></span></span></span></span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.224492857142857em;"><span style="top:-3.48775em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size1 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.03144em;"><span style="top:-2.468em;"><span class="pstrut" style="height:3em;"></span><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span><span style="top:-3.2255000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.387em;"><span class="pstrut" style="height:3em;"></span><span class="mord mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.532em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size1 size6"></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9893719999999999em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
-<p>方法三：特征值法求权重</p>
-<p>一致矩阵有一个特征值为n，其余特征值均为0，另外当特征值为n时，对应的特征向量刚好为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi><mo>[</mo><mfrac><mn>1</mn><msub><mi>a</mi><mn>11</mn></msub></mfrac><mo separator="true">,</mo><mfrac><mn>1</mn><msub><mi>a</mi><mn>12</mn></msub></mfrac><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mfrac><mn>1</mn><msub><mi>a</mi><mrow><mn>1</mn><mi>n</mi></mrow></msub></mfrac><msup><mo>]</mo><mi>T</mi></msup></mrow><annotation encoding="application/x-tex">k[\frac{1}{a_{11}},\frac{1}{a_{12}},...,\frac{1}{a_{1n}}]^{T}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2902079999999998em;vertical-align:-0.44509999999999994em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mopen">[</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.44509999999999994em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.44509999999999994em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.44509999999999994em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span></span></span></span>,这个特征向量刚好就是一致矩阵的第一列。</p>
 ]]></content>
     </entry>
 </feed>
